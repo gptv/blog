@@ -10,8 +10,6 @@ tags = ["AI", "作文", "微寫作"]
 # categories = ["課程", "AI"]
 # summary = "这是一篇⋯⋯文章。"
 # cover = "https://example.com/path/to/cover.jpg"
-# showTitle = true
-# showDate = true
 +++
 
 ## 緣起
