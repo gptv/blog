@@ -1,4 +1,30 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://bdfz.net/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'BDFZ-Suen'
 theme = "bearblog-neo"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 2
+
+[params]
+    postSearch = true
+    groupByYear = true
+    toc = true
+    customFooter = """
+    <p>© 2025 Suen · <a href="/about/">關於本站</a> · <a href="/feed.xml">RSS</a></p>
+    """
+
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
