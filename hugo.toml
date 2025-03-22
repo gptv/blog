@@ -11,8 +11,10 @@ theme = "bearblog-neo"
 
 [params]
     postSearch = true
-    groupByYear = true
+    groupByYear = false
     toc = true
+    showTitle = true
+    showDate = true
     customFooter = """
     <p>Powered by Suen · <a href="https://bdfz.net">bdfz.net</a></p>
     """

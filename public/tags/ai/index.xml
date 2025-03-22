@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>home on BDFZ-Suen</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in home on BDFZ-Suen</description>
+    <title>AI on BDFZ-Suen</title>
+    <link>http://localhost:1313/tags/ai/</link>
+    <description>Recent content in AI on BDFZ-Suen</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     
@@ -13,7 +13,7 @@
     <lastBuildDate>Mon, 10 Mar 2025 17:30:00 +0800</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI閱作文記</title>
       <link>http://localhost:1313/posts/ai%E9%96%B1%E4%BD%9C%E6%96%87%E8%A8%98/</link>
