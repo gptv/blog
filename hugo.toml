@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'BDFZ-Suen'
 theme = "bearblog-neo"
 
+enableRobotsTXT = true
+
 [menu]
   [[menu.main]]
     name = "Blog"
@@ -17,9 +19,7 @@ theme = "bearblog-neo"
     showDate = true
     upvote = true
     upvoteURL = "https://upvote.bdfz.net/" 
-    customFooter = """
-    <p>Powered by Suen · <a href="https://bdfz.net">bdfz.net</a></p>
-    """
+    favicon = "https://raw.githubusercontent.com/gptv/suen/main/images/Avatar-small.jpeg"
 
 [markup]
   [markup.goldmark]
