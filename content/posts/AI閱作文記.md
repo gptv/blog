@@ -2,6 +2,7 @@
 date = "2025-03-10T17:30:00+08:00"
 draft = false
 title = "AI閱作文記"
+slug = "ai"
 layout = "single"
 type = "blog"
 link = "ai"
