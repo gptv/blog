@@ -5,24 +5,17 @@ theme = "bearblog-neo"
 
 [menu]
   [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-
-  [[menu.main]]
     name = "Blog"
     url = "/posts/"
-    weight = 2
+    weight = 1
 
 [params]
     postSearch = true
     groupByYear = true
     toc = true
     customFooter = """
-    <p>© 2025 Suen · <a href="/about/">關於本站</a> · <a href="/feed.xml">RSS</a></p>
+    <p>Powered by Suen · <a href="https://bdfz.net">bdfz.net</a></p>
     """
-
-
 
 [markup]
   [markup.goldmark]
