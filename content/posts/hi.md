@@ -9,7 +9,7 @@ link = "hi"
 tags = ["AI", "論壇", "書院", "教育"]
 +++
 
-推薦了 [Bearblog](https://bearblog.dev/) 平台給學生，無牆，至少現在還。
+推薦了 <a href="https://bearblog.dev/" target="_blank">Bearblog</a> 平台給學生，無牆，至少現在還。
 用過的blog平台不少，但各有毛病。最後一個blogger編輯器是上古級別的，所以想遷移X的Articles，但體感更渣。
 
 一個寫作平台，
@@ -74,7 +74,7 @@ Human beings are a disease, 夠絕望。
 
 ***
 
-週末，梳理了下推薦給學生的 Blog 平台，一時心癢，找到 [Hugo Bear Neo](https://github.com/rokcso/hugo-bearblog-neo) 動手部署。
+週末，梳理了下推薦給學生的 Blog 平台，一時心癢，找到 <a href="https://github.com/rokcso/hugo-bearblog-neo" target="_blank">Hugo Bear Neo</a> 動手部署。
 
 自我原諒的理由是，你看，自己部署，數據和格式就更自主自定義了；雖然，犧牲了使用人家平台的省心省力。
 
