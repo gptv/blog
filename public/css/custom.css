@@ -1,12 +1,11 @@
 @font-face {
     font-family: "Huiwen Mingchao";
-    src: url("/fonts/HuWenMingChaoTi.woff2") format("woff2"),
-         url("/fonts/HuWenMingChaoTi.woff") format("woff");
+    src: url("https://raw.githubusercontent.com/gptv/lunyu/main/assets/fonts/HuWenMingChaoTi.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
-body {
-    font-family: "Huiwen Mingchao", serif;
+body, html, *, p, div, span, h1, h2, h3, h4, h5, h6, li, a {
+    font-family: "Huiwen Mingchao", serif !important;
 }
