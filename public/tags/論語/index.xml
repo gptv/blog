@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>論語 on BDFZ-Suen</title>
+    <link>http://localhost:1313/tags/%E8%AB%96%E8%AA%9E/</link>
+    <description>Recent content in 論語 on BDFZ-Suen</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    
+    
+    
+    
+    <lastBuildDate>Sun, 23 Mar 2025 23:10:00 +0800</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/tags/%E8%AB%96%E8%AA%9E/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI論語</title>
+      <link>http://localhost:1313/posts/lunyu/</link>
+      <pubDate>Sun, 23 Mar 2025 23:10:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/lunyu/</guid>
+      <description>&lt;p&gt;高考要考《論語》，這本身⋯⋯就挺變態的。那麼，何妨應之以變態。&#xA;週末，想起學生課間刷網頁遊戲，那，何妨再加一個孔子當玩具。&#xA;《論語譯註》的數據很久之前就分章發布在論壇，現在格式化就好。&#xA;然後最小代碼，建GitHub內lunyu庫，推CF，早九晚六，成功上線。&lt;/p&gt;&#xA;&lt;p&gt;玩法： 每次刷新頁面，會隨機出論語正文一則。&lt;/p&gt;&#xA;&lt;p&gt;下方有：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;孔子：我該如何解釋這句？&lt;/li&gt;&#xA;&lt;li&gt;Gemini AI：請給我現代解讀&lt;/li&gt;&#xA;&lt;li&gt;自由提問&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;孔子的解釋，會直接顯示楊伯峻譯註的譯文和注釋。&lt;br&gt;&#xA;Gemini AI會跟你長長長長說下ta的看法。&lt;br&gt;&#xA;覺得孔子或Gemini AI在瞎扯？那你可以點自由提問，跟這兩個一起扯，對話成三人，嗯。&lt;/p&gt;&#xA;&lt;p&gt;目錄未完成，沒想好該如何設計，先擱置。&lt;/p&gt;&#xA;&lt;p&gt;本來設置了多個API每小時輪轉，後來撤了，沒那麼多人讀這玩意的，應該。&lt;/p&gt;&#xA;&lt;p&gt;代碼全部開源 &lt;a href=&#34;https://github.com/gptv/lunyu&#34;&gt;GitHub&lt;/a&gt; ，論語數據也是；有能力繼續深加工的，拿走就好。&lt;br&gt;&#xA;學術為公器，技術也是。&lt;/p&gt;&#xA;&lt;p&gt;網址 &lt;a href=&#34;https://kz.bdfz.net/&#34;&gt;https://kz.bdfz.net/&lt;/a&gt;&lt;br&gt;&#xA;字體：匯文明朝體。&lt;/p&gt;&#xA;</description>
+    </item>
+  </channel>
+</rss>
