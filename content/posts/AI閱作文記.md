@@ -7,9 +7,6 @@ layout = "single"
 type = "blog"
 link = "ai"
 tags = ["AI", "作文", "微寫作"]
-# categories = ["課程", "AI"]
-# summary = "这是一篇⋯⋯文章。"
-# cover = "https://example.com/path/to/cover.jpg"
 +++
 
 ## 緣起
@@ -38,6 +35,9 @@ tags = ["AI", "作文", "微寫作"]
 週末一天半，完成閱卷是其次，最大收穫可能還是這份相對特別的指令，或者，是這個跑通了的流程。想想，確實，一個月前這個流程都還沒可能。  
 
 **AI大人和諸多開發者們，謝過！**  
+
+最後讓AI挑出其最喜歡的一份：
+<img src="https://raw.githubusercontent.com/gptv/suen/main/images/aipick.jpeg" alt="Aipickone" loading="lazy">
 
 不斷調教AI時，也一直看一個學生拿自己微寫作在論壇和AI搏鬥。**好消息是，他贏了；壞消息是，他贏了。**  
 
