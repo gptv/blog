@@ -15,6 +15,7 @@ _________________
 <ul>
 <li><a href="https://i.rdfzer.com" target="_blank">導航頁</a></li> 
 <li><a href="https://forum.rdfzer.com" target="_blank">彣の彰</a></li>
+<li><a href="https://kz.bdfz.net" target="_blank">孔子AI</a></li>
 </ul>
 
 _________________
