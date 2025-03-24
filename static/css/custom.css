@@ -7,6 +7,6 @@
     font-display: swap;
 }
 
-body, html, * {
+.post-content {
     font-family: "Huiwen Mingchao", serif !important;
 }
