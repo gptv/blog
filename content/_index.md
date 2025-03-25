@@ -13,15 +13,19 @@ _________________
 
 <h4 id="-new">✨ 看，這學校</h4>
 <ul>
-<li><a href="https://i.rdfzer.com" target="_blank">導航頁</a></li> 
-<li><a href="https://forum.rdfzer.com" target="_blank">彣の彰</a></li>
-<li><a href="https://kz.bdfz.net" target="_blank">孔子AI</a></li>
+<li>
+    <a href="https://i.rdfzer.com" target="_blank">導航頁</a> 🐶 
+    <a href="https://forum.rdfzer.com" target="_blank">彣の彰</a> 🦊
+    <a href="https://gk.bdfz.net" target="_blank">AI高考</a>
+</li>
+
 </ul>
 
 _________________
 <h4 id="-new">🌾 看，這些人</h4>
 <ul>
   <li><a href="https://bdfzer.com" target="_blank">bdfzer</a></li>
+  <li><a href="https://pathiara.bearblog.dev" target="_blank">诺克提斯提灯人</a></li> 
   <li><a href="https://dfeath777.bearblog.dev" target="_blank">死灰復燃 羽落天光</a></li>
   <li><a href="https://backfromtheportal.bearblog.dev" target="_blank">意会的淡蓝神经</a></li>
   <li><a href="https://icyyy.bearblog.dev" target="_blank">不想写学案</a></li>
