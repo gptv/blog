@@ -1,5 +1,5 @@
 +++
-date = "2025-03-25T19:57:00+08:00"
+date = "2025-03-25T20:37:00+08:00"
 draft = false
 title = "AI高考"
 slug = "gaokao"
