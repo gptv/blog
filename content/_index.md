@@ -25,6 +25,7 @@ _________________
 <h4 id="-new">🌾 看，這些人</h4>
 <ul>
   <li><a href="https://bdfzer.com" target="_blank">bdfzer</a></li>
+  <li><a href="https://nvthing.bearblog.dev" target="_blank">kyphosis</a></li>
   <li><a href="https://pathiara.bearblog.dev" target="_blank">诺克提斯提灯人</a></li> 
   <li><a href="https://dfeath777.bearblog.dev" target="_blank">死灰復燃 羽落天光</a></li>
   <li><a href="https://backfromtheportal.bearblog.dev" target="_blank">意会的淡蓝神经</a></li>

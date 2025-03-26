@@ -5,7 +5,6 @@ title = "AI高考"
 slug = "gaokao"
 layout = "single"
 type = "blog"
-link = "hlm"
 tags = ["AI", "高考"]
 +++
 
