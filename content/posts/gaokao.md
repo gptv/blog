@@ -4,7 +4,7 @@ draft = false
 title = "AI高考"
 slug = "gaokao"
 layout = "single"
-type = "gaokao"
+type = "blog"
 link = "hlm"
 tags = ["AI", "高考"]
 +++

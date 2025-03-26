@@ -34,7 +34,7 @@ _________________
 </ul>
 
 _________________
-**🌿翻牆後看，這些人**  
+**🌿 翻牆後看，這些人**  
 | <a href="https://rainfrom1989.blogspot.com" target="_blank" title="雨の夜と星の物語">雨の夜と星の物語</a> | 
 <a href="https://castorice.blogspot.com" target="_blank" title="Akame">Akame</a> | 
 <a href="https://amonleeeelnoma.blogspot.com" target="_blank" title="AMON">AMON</a> | 
