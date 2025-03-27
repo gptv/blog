@@ -14,11 +14,12 @@ _________________
 <h4 id="-new">✨ 看，這學校</h4>
 <ul>
 <li>
-    <a href="https://i.rdfzer.com" target="_blank">導航頁</a> 🐶 
-    <a href="https://forum.rdfzer.com" target="_blank">彣の彰</a> 🦊
-    <a href="https://gk.bdfz.net" target="_blank">AI高考</a> 🦁
-    <a href="https://kz.bdfz.net" target="_blank">AI論語</a> 🐭
-    <a href="https://hlm.bdfz.net" target="_blank">AI紅樓</a>
+    <a href="https://i.rdfzer.com" target="_blank">導航頁</a>  🐶 
+    <a href="https://forum.rdfzer.com" target="_blank">彣の彰</a>  🦊
+    <a href="https://gk.bdfz.net" target="_blank">AI高考</a>  🦁
+    <a href="https://kz.bdfz.net" target="_blank">AI論語</a>  🐭
+    <a href="https://hlm.bdfz.net" target="_blank">AI紅樓</a>  🐌   
+    <a href="https://mf.bdfz.net" target="_blank">高考默寫</a>
 </li>
 
 </ul>
