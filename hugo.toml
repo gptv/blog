@@ -19,10 +19,6 @@ enableRobotsTXT = true
   #   url = "/about/"
   #   weight = 2
 
-# 新增：作者信息 (一些主題會使用)
-[author]
-  name = "Suen"
-  # email = "your_email@example.com" # 可選
 
 [params]
     # ... (你現有的 params) ...
