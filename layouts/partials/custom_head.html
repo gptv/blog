@@ -4,8 +4,8 @@
 {{ if $customCSS }}
   {{/* Define options for processing */}}
   {{ $options := (dict
-        "targetPath" "css/custom.min.css"  /* Output path relative to public/ */
-        "minify" true                     /* Minify the CSS */
+        "targetPath" "css/custom.min.css"
+        "minify" true
        ) }}
 
   {{/* Process the CSS using the NEW css.Sass function */}}
