@@ -25,7 +25,7 @@ title: "Home"
 
 #### 🌾 看，這些人
 
-<a href="https://bdfzer.com" target="_blank">bdfzer</a> | <a href="https://nvthing.bearblog.dev" target="_blank">kyphosis</a> | <a href="https://pathiara.bearblog.dev" target="_blank">诺克提斯提灯人</a> | <a href="https://dfeath777.bearblog.dev" target="_blank">死灰復燃 羽落天光</a> | <a href="https://backfromtheportal.bearblog.dev" target="_blank">意会的淡蓝神经</a> | <a href="https://icyyy.bearblog.dev" target="_blank">不想写学案</a> | <a href="https://ravenjasmine.bearblog.dev" target="_blank">Scomber~Raven</a> | <a href="https://chw.bearblog.dev" target="_blank">mun札记</a>
+<a href="https://bdfzer.com" target="_blank">Bdfzer</a> | <a href="https://nvthing.bearblog.dev" target="_blank">kyphosis</a> | <a href="https://pathiara.bearblog.dev" target="_blank">诺克提斯提灯人</a> | <a href="https://dfeath777.bearblog.dev" target="_blank">死灰復燃 羽落天光</a> | <a href="https://backfromtheportal.bearblog.dev" target="_blank">意会的淡蓝神经</a> | <a href="https://icyyy.bearblog.dev" target="_blank">不想写学案</a> | <a href="https://ravenjasmine.bearblog.dev" target="_blank">Scomber~Raven</a> | <a href="https://chw.bearblog.dev" target="_blank">mun札记</a>
 
 ---
 

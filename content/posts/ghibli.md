@@ -1,11 +1,11 @@
 +++
 date = "2025-03-30T16:15:00+08:00"
 draft = false
-title = "風有格？"
+title = "風有格"
 slug = "ghibli"
 layout = "single"
 type = "blog"
-tags = ["AI", "課文"]
+tags = ["AI", "Google"]
 +++
 
 週末，平日來不及整理的，例行收拾。  
@@ -30,10 +30,3 @@ OpenAI 這一輪用做圖狙擊 Gemini 2.5，也是真的🐶。
 啟用了一個 Google Workspace 的教育版，但實際測試，新帳號都很難繞過手機環節，先擱置了。  
 想想，如果 Google 不被退出，太多事情，會不一樣吧。  
 有些事有些人，一直，是真的🐶。  
-
-
-
-
-
-
-
