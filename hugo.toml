@@ -1,7 +1,10 @@
 baseURL = 'https://bdfz.net/'
-languageCode = 'en-us'
+languageCode = 'zh-cn' # 如果你的主要內容是中文，建議改成 zh-cn 或 zh-tw
 title = 'Suen'
 theme = "bearblog-neo"
+# 新增：網站描述，會用在首頁的 <meta name="description">
+description = "Suen 的個人博客，隨想，隨寫。"
+copyright = "© 2025 Suen" # 會顯示在頁腳或其他地方
 
 enableRobotsTXT = true
 
@@ -10,18 +13,71 @@ enableRobotsTXT = true
     name = "Blog"
     url = "/posts/"
     weight = 1
+  # 新增：可以添加更多菜單項，比如 About 頁面
+  # [[menu.main]]
+  #   name = "About"
+  #   url = "/about/"
+  #   weight = 2
+
+# 新增：作者信息 (一些主題會使用)
+[author]
+  name = "Suen"
+  # email = "your_email@example.com" # 可選
 
 [params]
+    # ... (你現有的 params) ...
     postSearch = true
     groupByYear = false
-    toc = false
+    toc = false # 全局禁用 TOC，但可以在單個文章 Front Matter 中啟用
     showTitle = true
     showDate = true
     upvote = true
     upvoteURL = "https://upvote.bdfz.net/"
     favicon = "https://raw.githubusercontent.com/gptv/suen/main/images/Avatar-small.jpeg"
 
+    # 新增：可以添加社交媒體鏈接 (如果主題支持)
+    # social = [
+    #   { name = "github", url = "https://github.com/your_username" },
+    #   { name = "twitter", url = "https://twitter.com/your_username" }
+    # ]
+
+    # 新增：控制文章摘要的長度 (默認 70 個詞)
+    # summaryLength = 100
+
+    # 新增：設置日期顯示格式 (Go 語言格式)
+    dateFormat = "2006-01-02" # 年-月-日
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true # This allows raw HTML in Markdown, unrelated to CSS loading
+      unsafe = true
+  # 新增：配置 Markdown 中的代碼高亮
+  [markup.highlight]
+    # style = "github" # 選擇一個高亮樣式, 例如 github, dracula, monokai 等
+    noClasses = false  # 建議保持 false 以便使用 CSS 類控制樣式
+    lineNos = true     # 可選：顯示行號
+    # guessSyntax = true # 可選：嘗試猜測沒有指定語言的代碼塊語法
+
+# 新增：配置分類法 (Taxonomies) - 非常推薦！
+[taxonomies]
+  tag = "tags" # 啟用標籤，文章中可以用 tags = ["tag1", "tag2"]
+  category = "categories" # 啟用分類，文章中可以用 categories = ["cat1"]
+
+# 新增：配置分頁 (Pagination)
+[paginate]
+  default = 10 # 每頁顯示的文章數量
+
+# 新增：配置 Related Content (相關內容)
+[related]
+  threshold = 80 # 相關度閾值 (0-100)
+  includeNewer = true # 是否包含更新的文章
+  toLower = false # 是否將關鍵字轉為小寫再匹配
+  [[related.indices]]
+    name = "tags" # 基於標籤尋找相關內容
+    weight = 100 # 權重
+  [[related.indices]]
+    name = "categories" # 基於分類尋找相關內容
+    weight = 80  # 權重
+  [[related.indices]]
+    name = "date" # 基於日期尋找相關內容 (越近越相關)
+    weight = 10 # 權重
