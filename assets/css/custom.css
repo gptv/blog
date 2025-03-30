@@ -1,10 +1,26 @@
-@font-face {
-    font-family: 'HuWenMingChaoTi';
-    src: url('/fonts/HuWenMingChaoTi.woff2') format('woff2'),
-         url('/fonts/HuWenMingChaoTi.woff') format('woff');
-    font-display: swap;
-}
+/** assets/css/custom.css **/
 
-body, html, *, p, div, span, h1, h2, h3, h4, h5, h6, li, a {
-    font-family: "HuWenMingChaoTi", serif !important;
-}
+@font-face {
+    font-family: 'HuWenMingChaoTi'; /* Choose a name you'll use in CSS */
+    src: url('fonts/HuWenMingChaoTi.woff2') format('woff2'), /* Path relative to custom.css */
+         url('fonts/HuWenMingChaoTi.woff') format('woff');   /* Optional: Add .woff for wider compatibility */
+    font-weight: normal; /* Adjust if the font is bold, light, etc. */
+    font-style: normal;  /* Adjust if the font is italic */
+    font-display: swap; /* Good practice: Shows fallback font while loading */
+  }
+  
+  /* --- Add rules to APPLY the font below --- */
+  /* Apply the font to the whole body */
+body {
+    font-family: 'HuWenMingChaoTi', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* Add fallback fonts! */
+  }
+  
+  /* Or apply only to headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'HuWenMingChaoTi', Georgia, serif; /* Example with different fallbacks */
+  }
+  
+  /* Or apply to specific classes */
+  .content p {
+     font-family: 'HuWenMingChaoTi', sans-serif;
+  }

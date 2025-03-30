@@ -1,6 +1,6 @@
 baseURL = 'https://bdfz.net/'
 languageCode = 'en-us'
-title = 'BDFZ-Suen'
+title = 'Suen'
 theme = "bearblog-neo"
 
 enableRobotsTXT = true
@@ -18,10 +18,12 @@ enableRobotsTXT = true
     showTitle = true
     showDate = true
     upvote = true
-    upvoteURL = "https://upvote.bdfz.net/" 
+    upvoteURL = "https://upvote.bdfz.net/"
     favicon = "https://raw.githubusercontent.com/gptv/suen/main/images/Avatar-small.jpeg"
+    # --- ADD THIS LINE ---
+    customCSS = ["css/custom.css"] # Path relative to the 'assets' directory
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true
+      unsafe = true # This allows raw HTML in Markdown, unrelated to CSS loading

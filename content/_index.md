@@ -2,7 +2,7 @@
 title: "home"
 ---
 <div align="center">
-  <img src="https://raw.githubusercontent.com/gptv/suen/main/images/Avatar-small.jpeg" alt="About Me" loading="lazy">
+  <img src="https://raw.githubusercontent.com/gptv/suen/main/images/small.png" alt="About Me" loading="lazy">
   <br>
   <a href="https://suen.pages.dev/" target="_blank">About Me</a>    <br>
 	與很多所謂學生一起讀書，讀很多所謂古人今人所寫；  
