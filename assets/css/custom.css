@@ -1,9 +1,10 @@
 /* /assets/css/custom.css */
 
 @font-face {
-  font-family: 'HuWenMingChaoTi'; /* 確保這裡的名字和你下面用的一致 */
-  src: url('fonts/HuWenMingChaoTi.woff2') format('woff2'),
-       url('fonts/HuWenMingChaoTi.woff') format('woff'); /* 可選 */
+  font-family: 'HuWenMingChaoTi';
+  /* 修改這裡的路徑 */
+  src: url('../fonts/HuWenMingChaoTi.woff2') format('woff2'),
+       url('../fonts/HuWenMingChaoTi.woff') format('woff'); /* 可選 */
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,16 +12,5 @@
 
 /* 覆蓋主題的 --font-primary 變數 */
 body {
-  /* 將你的自定義字體放在最前面，後面跟上原來的後備字體或你選擇的其他後備字體 */
   --font-primary: 'HuWenMingChaoTi', Verdana, sans-serif;
 }
-
-/* 你可以刪除之前可能添加的直接設置 body font-family 的規則，
-   因為現在是通過修改變數來實現的。 */
-/* 例如，刪除或註釋掉下面這行 (如果有的話): */
-/* body { font-family: 'HuWenMingChaoTi', var(--font-primary), sans-serif; } */
-
-/* 如果你還想給 monospace 字體也換掉，可以類似地覆蓋 --font-secondary */
-/* body {
-     --font-secondary: 'Your Mono Font', monospace;
-   } */
