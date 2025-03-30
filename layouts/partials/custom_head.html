@@ -1,0 +1,11 @@
+{{/* /layouts/partials/custom_head.html */}}
+
+{{ $customCSS := resources.Get "css/custom.css" }} {{/* 相對 /assets/ 的路徑 */}}
+{{ if $customCSS }}
+  {{ $options := (dict "targetPath" "css/custom.min.css" "minify" true ) }}
+  {{/* 使用 ToCSS 確保 @font-face 中的 url() 能被 Hugo 正確處理 */}}
+  {{ $processedCustomCSS := $customCSS | resources.ToCSS $options | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $processedCustomCSS.RelPermalink }}" integrity="{{ $processedCustomCSS.Data.Integrity }}">
+{{ else }}
+  {{ warnf "Custom CSS file not found at assets/css/custom.css" }}
+{{ end }}
