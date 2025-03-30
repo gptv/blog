@@ -14,7 +14,7 @@ enableRobotsTXT = true
 [params]
     postSearch = true
     groupByYear = false
-    toc = true
+    toc = false
     showTitle = true
     showDate = true
     upvote = true
