@@ -64,20 +64,19 @@ enableRobotsTXT = true
   category = "categories" # 啟用分類，文章中可以用 categories = ["cat1"]
 
 # 新增：配置分頁 (Pagination)
-[paginate]
-  default = 10 # 每頁顯示的文章數量
+paginate = 10 # <--- 直接在頂層設置
 
 # 新增：配置 Related Content (相關內容)
 [related]
-  threshold = 80 # 相關度閾值 (0-100)
-  includeNewer = true # 是否包含更新的文章
-  toLower = false # 是否將關鍵字轉為小寫再匹配
+  threshold = 80
+  includeNewer = true
+  toLower = false
   [[related.indices]]
-    name = "tags" # 基於標籤尋找相關內容
-    weight = 100 # 權重
+    name = "tags"
+    weight = 100
   [[related.indices]]
-    name = "categories" # 基於分類尋找相關內容
-    weight = 80  # 權重
+    name = "categories"
+    weight = 80
   [[related.indices]]
-    name = "date" # 基於日期尋找相關內容 (越近越相關)
-    weight = 10 # 權重
+    name = "date"
+    weight = 10
