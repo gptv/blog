@@ -19,4 +19,10 @@ tags = ["AI", "真題","高考"]
 
 下一步：  
 * 整理加點字。  
-* AI大作文的指令優化。  
+* AI大作文的指令優化。 
+
+更新匯聚：
+
+><a href="https://bdfz.net/posts/gaokao" target="_blank">AI高考1.0</a>   
+><a href="https://bdfz.net/posts/aigaokao" target="_blank">AI高考2.0</a>   
+><a href="https://bdfz.net/posts/aigaokao2" target="_blank">AI高考3.0</a> 
