@@ -19,7 +19,7 @@ tags = ["AI", "課文"]
 左側瀑布關鍵數據流：篇目，文體，作者，選文出處，背誦篇目等。  
 右側聊天。
 
-網址：<https://kw.bdfz.net>   
+網址：<a href="https://kw.bdfz.net" target="_blank">https://kw.bdfz.net</a>  
 嗯。
 
 ---
