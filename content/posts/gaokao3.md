@@ -25,9 +25,10 @@ tags = ["AI", "真題","高考"]
 現在，臉疼。  
 但，人類被羞辱，好事。 
 
+ <a href="https://bdfz.net/posts/gaokao/" target="_blank">AI高考</a> 
 ---
 
-更新匯聚：
+版本說明：
 ><a href="https://bdfz.net/posts/gaokao" target="_blank">AI高考1.0</a>   
 ><a href="https://bdfz.net/posts/aigaokao" target="_blank">AI高考2.0</a>   
 ><a href="https://bdfz.net/posts/aigaokao2" target="_blank">AI高考3.0</a> 
