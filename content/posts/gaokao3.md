@@ -32,3 +32,13 @@ tags = ["AI", "真題","高考"]
 ><a href="https://bdfz.net/posts/gaokao" target="_blank">AI高考1.0</a>   
 ><a href="https://bdfz.net/posts/aigaokao" target="_blank">AI高考2.0</a>   
 ><a href="https://bdfz.net/posts/aigaokao2" target="_blank">AI高考3.0</a> 
+
+### 2025-04-02
+
+---
+
+再次重構頁面，原來上下，不利於邊看題邊做題，現在左題右答，好些了。  
+
+後續更新點：
+* 加入人類答案到參考答案。  
+* 繼續清洗數據，提高原題準確性。
