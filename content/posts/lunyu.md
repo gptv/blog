@@ -38,7 +38,7 @@ Gemini AI會跟你長長長長說下ta的看法。
 
 ---
 
-### 2025-04-01 
+## 2025-04-01 
 
 更新：  
 * 頁面重構。  
@@ -76,3 +76,12 @@ Token count 97,089 / 1,048,576
 
 現階段倉庫關了，原因是畢竟用了譯註全書。  
 交代下。
+
+
+## 2025-04-04
+
+沒法硬剛GFW，繞⋯⋯  
+<a href="https://gk.bdfz.net" target="_blank">AI高考</a> 🦁 | <a href="https://kz.bdfz.net" target="_blank">AI論語</a> 🐭 | <a href="https://hlm.bdfz.net" target="_blank">AI紅樓</a> 🐌 | <a href="https://mf.bdfz.net" target="_blank">高考默寫</a> 🦉 | <a href="https://kw.bdfz.net" target="_blank">AI課文</a>現在應該都可以無牆使用 AI 了。  
+已加入網站統計。
+
+AI 回覆速度依舊沒有解決，會很慢慢慢⋯⋯
