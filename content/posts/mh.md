@@ -8,7 +8,7 @@ type = "blog"
 tags = ["郁達夫", "人間"]
 +++
 
-![2025-04-06_001](https://img.bdfz.net/images/2025/04/06/2025-04-06_001.webp)
+![001](https://img.bdfz.net/images/2025/04/06/001.webp)
 
 因為近在咫尺，終於相忘江湖。
 
