@@ -37,7 +37,7 @@ tags = ["AI", "作文", "微寫作"]
 **AI大人和諸多開發者們，謝過！**  
 
 最後讓AI挑出其最喜歡的一份：
-<img src="https://raw.githubusercontent.com/gptv/suen/main/images/aipick.jpg" alt="Aipickone" loading="lazy">
+![20250406001](https://img.bdfz.net/20250406001.webp)
 
 不斷調教AI時，也一直看一個學生拿自己微寫作在論壇和AI搏鬥。**好消息是，他贏了；壞消息是，他贏了。**  
 
