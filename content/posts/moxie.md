@@ -85,6 +85,9 @@ JSON 化上述數據。
 於是，就出現了上述，查了一小時為什麼一直空 candidates而不是有效反饋⋯⋯  
 
 最終，更換了惡毒指令為溫暖指令，問題解決。  
+
+![Screenshot 2025-04-05 at 09.05.07.png (20250406004)](https://img.bdfz.net/20250406004.webp)
+
 現在看惡毒指令，好吧，我確實活該。  
 指令：  
 > // The "angry teacher" prompt - Ensure it's harsh! (Requirement 5)
