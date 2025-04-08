@@ -21,9 +21,8 @@ title: "Home"
 
 | <a href="https://i.rdfzer.com" target="_blank">導航頁</a> 🐶 | <a href="https://forum.rdfzer.com" target="_blank">彣の彰</a> 🦊 | <a href="https://mf.bdfz.net" target="_blank">高考默寫</a> 🦉 |
 
-| <a href="https://gk.bdfz.net" target="_blank">AI高考</a> 🦁 | <a href="https://mx.bdfz.net" target="_blank">AI默寫</a> 🐽  | <a href="https://kz.bdfz.net" target="_blank">AI論語</a> 🐭 | <a href="https://hlm.bdfz.net" target="_blank">AI紅樓</a> 🐌 | <a href="https://kw.bdfz.net" target="_blank">AI課文</a>🪲  |  
-
- | <a href="https://todo.bdfz.net" target="_blank">每日 To-Do Online</a> 🍄‍🟫  | 
+| <a href="https://gk.bdfz.net" target="_blank">AI高考</a> 🦁 | <a href="https://mx.bdfz.net" target="_blank">AI默寫</a> 🐽  | <a href="https://kz.bdfz.net" target="_blank">AI論語</a> 🐭 | <a href="https://hlm.bdfz.net" target="_blank">AI紅樓</a> 🐌 | <a href="https://kw.bdfz.net" target="_blank">AI課文</a>🪲 | <a href="https://i.bdfz.net" target="_blank">Bdfz-AI</a> 🦩 |   
+| <a href="https://todo.bdfz.net" target="_blank">To-Do Online</a> 🍄‍🟫  | 
 
 ---
 
