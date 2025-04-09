@@ -8,11 +8,13 @@ type = "blog"
 tags = ["满分", "默寫","高考"]
 +++
 
-| <a href="https://mx.bdfz.net" target="_blank">AI默寫</a> 🐽  | 是為了訓練，看你服不服，從不從；有多服從，有多從。  
+| <a href="https://mx.bdfz.net" target="_blank">AI默寫</a> 🐽  | 是為了訓練，看你服不服，從不從；有多服，有多從。  
 在網站頁腳，<a href="https://bdfz.net/posts/moxie" target="_blank" rel="noopener noreferrer">關於 Moxie</a> 裡，對默寫的態度，我專門說過，不贅述。
 
-從14、15、16班那屆高二起，已經在整理高考背誦的資料，網站那時也已經搭完，後來似乎還將網站語雀化過；但那個最初的默寫網站用了 Google sites，原始鏈接一直在這裡： <a href="https://sites.google.com/view/8fen" target="_blank">默寫1.0</a>。點開了打不開的，自己反思下為什麼不會翻牆。  
-沒錯，刻意選了個有牆的地方，當時；現在想想，唉，就是有病⋯⋯   
+從14、15、16班那屆高二起，已經在整理高考背誦的資料，網站那時也已經搭完，後來似乎還將網站語雀化過；但那個最初的默寫網站用了 Google sites，原始鏈接一直在這裡： <a href="https://sites.google.com/view/8fen" target="_blank">默寫1.0</a>。  
+點開了打不開的，自己反思下為什麼不會翻牆。  
+沒錯，刻意選了個有牆的地方，當時；  
+現在想想，唉，就是有病⋯⋯   
 
 這幾天做完系列的| <a href="https://gk.bdfz.net" target="_blank">AI高考</a> 🦁 | <a href="https://mx.bdfz.net" target="_blank">AI默寫</a> 🐽  | <a href="https://kz.bdfz.net" target="_blank">AI論語</a> 🐭 | <a href="https://hlm.bdfz.net" target="_blank">AI紅樓</a> 🐌 | <a href="https://kw.bdfz.net" target="_blank">AI課文</a>🪲 | <a href="https://i.bdfz.net" target="_blank">Bdfz-AI</a> 🦩 | <a href="https://todo.bdfz.net" target="_blank">To-Do Online</a> 🍄‍🟫  | ，突然發現，默寫題都牆內了，何苦還牆內牆外⋯⋯   
 
@@ -20,7 +22,7 @@ tags = ["满分", "默寫","高考"]
 現在是18點，前後端完工，上線。  
 開始寫這個 About。
 
-走了個彎路，昨晚走的。  
+走了個彎路，昨晚。  
 當時想偷懶找個現成框架，試了下，css各種報錯⋯⋯
 靜態網站再用框架，我就是🐶。    
 於是，從零寫起。  
@@ -81,8 +83,7 @@ tags = ["满分", "默寫","高考"]
 但，世事嗎，多無常；  
 絕望都可以用來反抗的，遑論其餘。  
 
-所以，網址：  
- | <a href="https://mf.bdfz.net" target="_blank">高考默寫</a> 🦉 |
+所以，網址：  | <a href="https://mf.bdfz.net" target="_blank">高考默寫</a> 🦉 |
 
 沒錯，這個 mf.bdfz.net 網址其實前段時間給過 1.0 版了。  
 現在，舊版死去，新版取奪。
