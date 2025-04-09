@@ -96,3 +96,114 @@ mf 是什麼意思？
 但如果有，都會在本文下。
 
 ![Screenshot 2025-04-09 at 03.57.42.png (20250409001)](https://img.bdfz.net/20250409001.webp)
+
+
+一個莫名其妙的安卓不顯示目錄坑，記錄：
+
+---
+
+## Tutorial: Debugging the Disappearing Mobile Menu Toggle
+
+<details>
+
+It's a common and frustrating scenario in responsive web development: your mobile navigation toggle button (the "hamburger" icon ☰) works perfectly on your iPhone or desktop simulator, but stubbornly refuses to appear on certain Android devices or other browsers. You've checked your media queries, the `display: block` seems right, yet the button remains invisible.
+
+This tutorial explains the likely culprits behind this issue, drawing lessons from a real-world debugging case, and provides a systematic approach to fix it.
+
+**The Problem We Solved:**
+
+A mobile menu toggle button (`#mobile-menu-toggle`) was intended to appear on screens 800px wide or less. It worked on iOS but not on Android. The final fix involved correcting how its `display` and positioning styles were applied across different CSS rules (global vs. media queries).
+
+**Understanding the Culprits: Why CSS Can Be Tricky**
+
+Several core CSS concepts often interact to cause these kinds of cross-browser inconsistencies:
+
+1.  **The Cascade:** Styles are applied in order. Rules defined later in the stylesheet or in more specific selectors can override earlier or less specific ones.
+2.  **Specificity:** More specific selectors (e.g., `header #mobile-menu-toggle`) have more weight than less specific ones (e.g., `#mobile-menu-toggle`). IDs have more weight than classes, which have more weight than element selectors. `!important` overrides almost everything (use with extreme caution!).
+3.  **Media Queries:** Styles within a media query (e.g., `@media (max-width: 800px)`) only apply when the condition is met. However, they still interact with global styles and other media queries based on cascade and specificity.
+4.  **Global vs. Scoped Styles (The Key Lesson Here):** It's crucial how you structure your default (global) styles versus the styles applied only within specific media queries. Defining positioning (`position`, `top`, `left`, etc.) globally for an element that is initially hidden (`display: none;`) can sometimes lead to unpredictable behavior when a media query later tries to make it visible (`display: block;`) *without* re-declaring all necessary positioning rules within that same query. The browser might get confused about which positioning context applies.
+5.  **Browser Rendering Differences:** While standards compliance is much better now, minor differences still exist in how browser engines (WebKit for iOS/Safari, Blink for Chrome/Android Chrome, Gecko for Firefox) calculate layout, handle specificity edge cases, or render certain properties.
+6.  **Caching:** Browsers (especially mobile ones) aggressively cache CSS. You might be looking at an old version of your stylesheet, even after deploying changes.
+
+**The Debugging Playbook: How to Find the Issue**
+
+When your mobile toggle is playing hide-and-seek:
+
+1.  **Check the Basics (HTML):**
+    *   **Viewport Meta Tag:** Ensure `<meta name="viewport" content="width=device-width, initial-scale=1.0">` is correctly placed in your HTML `<head>`. This is fundamental for responsive design.
+    *   **Element Exists:** Double-check that the button element (`<button id="mobile-menu-toggle">☰</button>`) actually exists in your HTML where you expect it.
+2.  **Browser DevTools are Your Best Friend:**
+    *   **Remote Debugging:** Connect the problematic device (e.g., the Android phone) to your computer via USB and use Chrome DevTools (`chrome://inspect`) or Safari Web Inspector to inspect the live page *on the device*. This is crucial.
+    *   **Inspect the Element:** Select the `#mobile-menu-toggle` element in the "Elements" panel.
+    *   **Check Computed Styles:** Go to the "Computed" panel. Filter for the `display` property.
+        *   **What is its final value?** Is it `block` (or `inline-block`, etc.) as expected, or is it `none`?
+        *   **If `none`:** Expand the `display` property to see the **CSS cascade**. DevTools will show you exactly which rule (file and line number) is setting it to `none` and which rules were overridden. This usually points directly to the conflicting rule.
+        *   **If `block` (but still invisible):** The issue is likely positioning, size, or overlap. Check these computed styles: `position`, `top`, `left`, `right`, `bottom`, `width`, `height`, `z-index`, `opacity`, `visibility`, `transform`. Is the element 0x0 pixels? Is it positioned off-screen? Is its `z-index` lower than the header background?
+    *   **Check Layout:** Look at the box model diagram. Does it have margin/padding pushing it away? Inspect the parent element (`<header>`) – does it have `overflow: hidden`? How are its flex/grid properties (`justify-content`, `align-items`) affecting the space available for the absolutely positioned button?
+3.  **Isolate with Extreme Styles (Temporary Test):** Force the element to be visible within the problematic media query:
+    ```css
+    @media (max-width: 800px) { /* Or your target breakpoint */
+        #mobile-menu-toggle {
+            display: block !important;
+            width: 100px !important;
+            height: 100px !important;
+            background-color: red !important;
+            border: 5px solid lime !important;
+            position: fixed !important; /* Force fixed to test positioning */
+            top: 50px !important;
+            left: 50px !important;
+            z-index: 9999 !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+    }
+    ```
+    If you *still* can't see it, the problem is likely deeper (Viewport, browser bug, parent clipping). If you *can* see it now, the issue is definitely a styling conflict or layout constraint you need to identify using DevTools. (Remember to remove these test styles afterwards!).
+4.  **Clear Cache Thoroughly:** On the problematic device, go into browser settings -> Privacy/Site Settings -> Clear browsing data -> Select "Cached images and files" (and potentially "Cookies and site data" for a full reset) -> Clear data. Then fully close and reopen the browser.
+
+**The Solution & Best Practices (Based on Our Fix)**
+
+The most robust way to handle mobile toggle visibility and positioning is:
+
+1.  **Minimal Global Style:** Define only the *default hidden state* and non-positional base styles globally:
+    ```css
+    /* Global Scope */
+    #mobile-menu-toggle {
+        display: none; /* Default: Hidden */
+        /* Basic styles like background, border, color, cursor, padding, z-index */
+        background: none;
+        border: none;
+        font-size: 1.8em;
+        color: var(--text-color);
+        cursor: pointer;
+        padding: 5px;
+        line-height: 1;
+        z-index: 1101;
+    }
+    ```
+2.  **Combined Display & Positioning in Media Query:** Apply *both* the `display: block` rule and *all necessary positioning rules* together within the specific media query where the button should become visible:
+    ```css
+    /* Inside the relevant media query, e.g., max-width: 800px */
+    @media (max-width: 800px) {
+        #mobile-menu-toggle {
+            display: block;      /* Make it visible */
+            /* Add ALL required positioning styles here */
+            position: absolute;
+            top: 50%;
+            left: 10px; /* Or your desired position */
+            transform: translateY(-50%);
+            /* Adjust font-size etc. if needed */
+            font-size: 1.6em;
+        }
+        /* Hide desktop nav */
+        .side-nav {
+             display: none;
+        }
+        /* other mobile styles... */
+    }
+    ```
+3.  **Clean Intermediate Breakpoints:** Ensure that media queries for intermediate sizes (like `@media (max-width: 1024px)` in our case) **do not** contain conflicting `display: none;` rules for the mobile toggle. Let it inherit the global `display: none;` until the specific breakpoint (`max-width: 800px`) is met.
+
+**Conclusion:**
+
+Debugging CSS across devices often boils down to understanding the cascade, specificity, and how media queries interact with global styles. By defining minimal default states globally and applying display *and* positioning changes together within the correct media query breakpoint, you create more robust and predictable responsive layouts. And never underestimate the power (and frustration) of browser caching – always clear it thoroughly when testing CSS changes!
