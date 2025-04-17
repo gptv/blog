@@ -1,0 +1,8 @@
+# Hugo build artifacts
+/public/
+/.hugo_build.lock
+
+# VSCode, macOS, node_modules 等
+.vscode/
+.DS_Store
+node_modules/
