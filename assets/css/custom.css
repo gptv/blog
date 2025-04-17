@@ -18,6 +18,12 @@ body {
   --font-size-primary: 1.15em; /* 將這行的值調整到你滿意的大小 */
 }
 
+/* center any element with .center-image */
+.center-image {
+  display: block;
+  margin: 0 auto;
+}
+
 /* 可選：如果覺得標題 (h1, h2 等) 也需要調整 */
 /* h1, h2, h3, h4, h5, h6 {
 /*      font-size: 1.Xrem; /* 根據需要調整，注意標題通常用 rem 或 em */

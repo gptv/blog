@@ -1,10 +1,10 @@
-baseURL        = "https://bdfz.net/"
-languageCode   = "zh-cn"
-title          = "Suen"
-theme          = "bearblog-neo"
-description    = "Suen 的個人博客，隨想，隨寫。"
-copyright      = "© 2025 Suen"
-enableRobotsTXT = true
+baseURL           = "https://bdfz.net/"
+languageCode      = "zh-cn"
+title             = "Suen"
+theme             = "bearblog-neo"
+description       = "Suen 的個人博客，隨想，隨寫。"
+copyright         = "© 2025 Suen"
+enableRobotsTXT   = true
 
 [menu]
   [[menu.main]]
@@ -13,20 +13,26 @@ enableRobotsTXT = true
     weight = 1
 
 [params]
-  postSearch   = true
-  groupByYear  = false
-  toc          = false
-  showTitle    = true
-  showDate     = true
-  upvote       = true
-  upvoteURL    = "https://upvote.bdfz.net/"
-  favicon      = "https://raw.githubusercontent.com/gptv/suen/main/images/Avatar-small.jpeg"
-  dateFormat   = "2006-01-02"
-  paginationWindow = 2
+  postSearch        = true
+  groupByYear       = false
+  toc               = false
+  showTitle         = true
+  showDate          = true
+  upvote            = true
+  upvoteURL         = "https://upvote.bdfz.net/"
+  favicon           = "https://raw.githubusercontent.com/gptv/suen/main/images/Avatar-small.jpeg"
+  dateFormat        = "2006-01-02"
+  paginationWindow  = 2
 
 [markup]
-  [markup.goldmark.renderer]
-    unsafe = true
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      # 打开属性语法，支持 {...} 形式给 img、链接等加属性
+      attribute = true
+    [markup.goldmark.renderer]
+      # 允许原生 HTML（如 <center>、<script>）
+      unsafe = true
+
   [markup.highlight]
     noClasses = false
     lineNos   = true
@@ -44,12 +50,15 @@ enableRobotsTXT = true
   threshold    = 80
   includeNewer = true
   toLower      = false
+
   [[related.indices]]
     name   = "tags"
     weight = 100
+
   [[related.indices]]
     name   = "categories"
     weight = 80
+
   [[related.indices]]
     name   = "date"
     weight = 10
