@@ -1,0 +1,25 @@
+{{/* 接收一个 *page.Pager 作为上下文 */}}
+<nav class="pagination">
+  {{ if .HasPrev }}
+    <a class="prev" href="{{ .Prev.URL }}">‹ Prev</a>
+  {{ end }}
+
+  {{/* 可选：在 config.toml 里设置 params.paginationWindow = 2 */}}
+  {{ $w := or .Site.Params.paginationWindow 2 }}
+
+  {{/* 计算要显示的页码范围 */}}
+  {{ $start := max 1 (sub .PageNumber $w) }}
+  {{ $end   := min .TotalPages (add .PageNumber $w) }}
+
+  {{ range seq $start $end }}
+    {{ if eq . $.PageNumber }}
+      <span class="current">{{ . }}</span>
+    {{ else }}
+      <a href="{{ $.Pagers.Get .URL }}">{{ . }}</a>
+    {{ end }}
+  {{ end }}
+
+  {{ if .HasNext }}
+    <a class="next" href="{{ .Next.URL }}">Next ›</a>
+  {{ end }}
+</nav>

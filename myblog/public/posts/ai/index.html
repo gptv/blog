@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/gptv/suen/main/images/Avatar-small.jpeg" />
+<title>AI閱作文記 | BDFZ-Suen</title>
+<meta name="title" content="AI閱作文記" />
+<meta name="description" content="緣起
+上週五下午統練，藉之測試AI批微寫作。
+將全部紙質卷微寫作疊放拍照，同步iCloud。然後，開始想，這⋯⋯咋指令⋯⋯
+當初大作文指令，用了90年代研究報告和現行說不清道不明的標準，同時借鑑了台灣指考標準，效果足夠。微寫作一直沒做，實在是想不清該怎麼指令；且紙質轉電子版，上傳，召喚AI，多輪測試，都很折騰，於是一直擱置，至今。
+上週Mistral放出了OCR新模型，漢字識別準確率從91%提到97%左右，用Colab跑通了圖片，還順便測了本數學，效果確實不錯，切入口就有了，於是，動心。
+更重要的原因，是論壇AI運行已熟稔，這一年下來Gemini保持最新開發版，2.0 Flash Thinking Experimental 01-21 體感極佳。且，Discourse內Automation前兩天更新，終於跑通了AI自動回覆。於是，俱備。
+指令
+就差指令。
+掃外圍，先。啟動Mistral識別全部學生微寫作文字前，想起前段時間拿Gemini 2.0 Flash Thinking Experimental 01-21識別手寫效果不錯，先給其機會；結果，比想像中好很多很多——字跡特別清晰的有三兩份一字不需改，一般不怎麼塗改的大致改動三兩處即可，特別亂的三五份⋯⋯不是AI的問題了就。於是果斷放棄Colab，畢竟Aistudio的介面更友好。
+這個識別的默認溫度0.7，其實有點高。學生手寫的「困于」，AI識別時肯定覺得根據上下文還是「囿于」好，就直接給我輸出「囿于」了。這類處理⋯⋯至少七八次⋯⋯好玩的是，學生論壇回覆說：「其实我想写囿于来着，想不起字怎么写了。」
+手寫這種除了學校沒人用的落後東西，我咒詛你在日常更快速死；去做藝術就好，那裡有龜甲直至毛筆，都是你舊雨知識。
+逐一截圖、粘貼、扔Aistudio識別，逐一校對，以紙質卷學號為標題，在論壇作文區發帖，該區域AI會自動回覆分數和批語和建議，逐一審閱AI批閱和分數。
+除兩份試卷逼我做了指令調整，三四份讓我不得不追問AI；其他全部，幾乎和我感覺自己要打的分數，完全一致。
+週末一天半，完成閱卷是其次，最大收穫可能還是這份相對特別的指令，或者，是這個跑通了的流程。想想，確實，一個月前這個流程都還沒可能。
+AI大人和諸多開發者們，謝過！
+最後讓AI挑出其最喜歡的一份：
+
+不斷調教AI時，也一直看一個學生拿自己微寫作在論壇和AI搏鬥。好消息是，他贏了；壞消息是，他贏了。
+這句這麼寫，是給大家畫線做賞析玩的，嗯。
+
+粘貼作文題目和你作文正文，在「作文」版區發帖即可。
+如果是近期大家一起在做的題目，譬如統練微寫作，不粘貼題目直接給正文亦可，後台指令中默認包含題目了。
+基於AI Auto Responder，會完成自動批閱⋯⋯
+
+AI會自動區分大作文或微寫作
+結構化評語
+量化打分
+給出修改建議，你可以回覆AI多輪修改
+
+全選相關帖子，加TAG：作文 微寫作 名著VS縮寫，齊活。
+
+亂曰
+作為語言文字文學文化學科，日常題目的全部閱卷，高考閱卷，調教好的AI，此刻，沒錯，此刻，目前，現下，公元2025年03月11日，或者10日，因為這篇寫到這剛過10日零點後三分鐘；已經遠遠超出全部人類教師的閱卷水準。
+且，稍作構想，技術上，完全可以在任意場景下實現。但，所謂真世界，實非真世界，是為真世界。
+佛呢，本曰的是哲思，我呢，其實只想以之鄙薄人類，包括，我，這個自己。
+
+8號是論壇一年，算生日吧；
+學生發帖在給論壇和論壇元老AI過生日，偉大政府也送了禮物，派GFW牆掉了論壇域名，嗯，非常好；感謝認證。
+北京市前兩天發了《北京市推进中小学人工智能教育工作方案（2025—2027年）》的通知，嗯，這個，更好。
+人類畫地為牢，以此村落彼村落，此文明彼文明，此國界彼國界⋯⋯都，特別好。
+域名問題發了投票，相關聯的幾個導航頁面也重新git push完，看投票結果，再說。等待與希望是人類的全部智慧，也許，真的是。
+但，基督山是復仇故事，GFW如何被復仇？人心的牆呢？
+前些日子放棄Blogger，年付買了X Premium&#43;，一則厭惡廣告，也為想將文章類遷移到X上，結果X那個文章的寫作頁面，嗯，特別爛。虧吧？不。禍福相倚，這個年費最後成了Grok3，基於X Premium&#43;瘋狂漲價的程度，這個無疑已經成了本年度最值付費。
+退一步，寫到Apple Note，發X吧。
+
+真亂曰
+想想呢，這世界，在有意思的時候，是有點意思的。" />
+<meta name="keywords" content="AI,作文,微寫作," />
+
+<link rel="canonical" href="http://localhost:1313/posts/ai/">
+
+
+<meta property="og:url" content="http://localhost:1313/posts/ai/">
+  <meta property="og:site_name" content="BDFZ-Suen">
+  <meta property="og:title" content="AI閱作文記">
+  <meta property="og:description" content="緣起 上週五下午統練，藉之測試AI批微寫作。
+將全部紙質卷微寫作疊放拍照，同步iCloud。然後，開始想，這⋯⋯咋指令⋯⋯
+當初大作文指令，用了90年代研究報告和現行說不清道不明的標準，同時借鑑了台灣指考標準，效果足夠。微寫作一直沒做，實在是想不清該怎麼指令；且紙質轉電子版，上傳，召喚AI，多輪測試，都很折騰，於是一直擱置，至今。
+上週Mistral放出了OCR新模型，漢字識別準確率從91%提到97%左右，用Colab跑通了圖片，還順便測了本數學，效果確實不錯，切入口就有了，於是，動心。
+更重要的原因，是論壇AI運行已熟稔，這一年下來Gemini保持最新開發版，2.0 Flash Thinking Experimental 01-21 體感極佳。且，Discourse內Automation前兩天更新，終於跑通了AI自動回覆。於是，俱備。
+指令 就差指令。
+掃外圍，先。啟動Mistral識別全部學生微寫作文字前，想起前段時間拿Gemini 2.0 Flash Thinking Experimental 01-21識別手寫效果不錯，先給其機會；結果，比想像中好很多很多——字跡特別清晰的有三兩份一字不需改，一般不怎麼塗改的大致改動三兩處即可，特別亂的三五份⋯⋯不是AI的問題了就。於是果斷放棄Colab，畢竟Aistudio的介面更友好。
+這個識別的默認溫度0.7，其實有點高。學生手寫的「困于」，AI識別時肯定覺得根據上下文還是「囿于」好，就直接給我輸出「囿于」了。這類處理⋯⋯至少七八次⋯⋯好玩的是，學生論壇回覆說：「其实我想写囿于来着，想不起字怎么写了。」
+手寫這種除了學校沒人用的落後東西，我咒詛你在日常更快速死；去做藝術就好，那裡有龜甲直至毛筆，都是你舊雨知識。
+逐一截圖、粘貼、扔Aistudio識別，逐一校對，以紙質卷學號為標題，在論壇作文區發帖，該區域AI會自動回覆分數和批語和建議，逐一審閱AI批閱和分數。
+除兩份試卷逼我做了指令調整，三四份讓我不得不追問AI；其他全部，幾乎和我感覺自己要打的分數，完全一致。
+週末一天半，完成閱卷是其次，最大收穫可能還是這份相對特別的指令，或者，是這個跑通了的流程。想想，確實，一個月前這個流程都還沒可能。
+AI大人和諸多開發者們，謝過！
+最後讓AI挑出其最喜歡的一份： 不斷調教AI時，也一直看一個學生拿自己微寫作在論壇和AI搏鬥。好消息是，他贏了；壞消息是，他贏了。
+這句這麼寫，是給大家畫線做賞析玩的，嗯。
+粘貼作文題目和你作文正文，在「作文」版區發帖即可。
+如果是近期大家一起在做的題目，譬如統練微寫作，不粘貼題目直接給正文亦可，後台指令中默認包含題目了。
+基於AI Auto Responder，會完成自動批閱⋯⋯
+AI會自動區分大作文或微寫作 結構化評語 量化打分 給出修改建議，你可以回覆AI多輪修改 全選相關帖子，加TAG：作文 微寫作 名著VS縮寫，齊活。
+亂曰 作為語言文字文學文化學科，日常題目的全部閱卷，高考閱卷，調教好的AI，此刻，沒錯，此刻，目前，現下，公元2025年03月11日，或者10日，因為這篇寫到這剛過10日零點後三分鐘；已經遠遠超出全部人類教師的閱卷水準。
+且，稍作構想，技術上，完全可以在任意場景下實現。但，所謂真世界，實非真世界，是為真世界。
+佛呢，本曰的是哲思，我呢，其實只想以之鄙薄人類，包括，我，這個自己。
+8號是論壇一年，算生日吧；
+學生發帖在給論壇和論壇元老AI過生日，偉大政府也送了禮物，派GFW牆掉了論壇域名，嗯，非常好；感謝認證。
+北京市前兩天發了《北京市推进中小学人工智能教育工作方案（2025—2027年）》的通知，嗯，這個，更好。
+人類畫地為牢，以此村落彼村落，此文明彼文明，此國界彼國界⋯⋯都，特別好。
+域名問題發了投票，相關聯的幾個導航頁面也重新git push完，看投票結果，再說。等待與希望是人類的全部智慧，也許，真的是。
+但，基督山是復仇故事，GFW如何被復仇？人心的牆呢？
+前些日子放棄Blogger，年付買了X Premium&#43;，一則厭惡廣告，也為想將文章類遷移到X上，結果X那個文章的寫作頁面，嗯，特別爛。虧吧？不。禍福相倚，這個年費最後成了Grok3，基於X Premium&#43;瘋狂漲價的程度，這個無疑已經成了本年度最值付費。
+退一步，寫到Apple Note，發X吧。
+真亂曰 想想呢，這世界，在有意思的時候，是有點意思的。">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-10T17:30:00+08:00">
+    <meta property="article:modified_time" content="2025-03-10T17:30:00+08:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="作文">
+    <meta property="article:tag" content="微寫作">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI閱作文記">
+  <meta name="twitter:description" content="緣起 上週五下午統練，藉之測試AI批微寫作。
+將全部紙質卷微寫作疊放拍照，同步iCloud。然後，開始想，這⋯⋯咋指令⋯⋯
+當初大作文指令，用了90年代研究報告和現行說不清道不明的標準，同時借鑑了台灣指考標準，效果足夠。微寫作一直沒做，實在是想不清該怎麼指令；且紙質轉電子版，上傳，召喚AI，多輪測試，都很折騰，於是一直擱置，至今。
+上週Mistral放出了OCR新模型，漢字識別準確率從91%提到97%左右，用Colab跑通了圖片，還順便測了本數學，效果確實不錯，切入口就有了，於是，動心。
+更重要的原因，是論壇AI運行已熟稔，這一年下來Gemini保持最新開發版，2.0 Flash Thinking Experimental 01-21 體感極佳。且，Discourse內Automation前兩天更新，終於跑通了AI自動回覆。於是，俱備。
+指令 就差指令。
+掃外圍，先。啟動Mistral識別全部學生微寫作文字前，想起前段時間拿Gemini 2.0 Flash Thinking Experimental 01-21識別手寫效果不錯，先給其機會；結果，比想像中好很多很多——字跡特別清晰的有三兩份一字不需改，一般不怎麼塗改的大致改動三兩處即可，特別亂的三五份⋯⋯不是AI的問題了就。於是果斷放棄Colab，畢竟Aistudio的介面更友好。
+這個識別的默認溫度0.7，其實有點高。學生手寫的「困于」，AI識別時肯定覺得根據上下文還是「囿于」好，就直接給我輸出「囿于」了。這類處理⋯⋯至少七八次⋯⋯好玩的是，學生論壇回覆說：「其实我想写囿于来着，想不起字怎么写了。」
+手寫這種除了學校沒人用的落後東西，我咒詛你在日常更快速死；去做藝術就好，那裡有龜甲直至毛筆，都是你舊雨知識。
+逐一截圖、粘貼、扔Aistudio識別，逐一校對，以紙質卷學號為標題，在論壇作文區發帖，該區域AI會自動回覆分數和批語和建議，逐一審閱AI批閱和分數。
+除兩份試卷逼我做了指令調整，三四份讓我不得不追問AI；其他全部，幾乎和我感覺自己要打的分數，完全一致。
+週末一天半，完成閱卷是其次，最大收穫可能還是這份相對特別的指令，或者，是這個跑通了的流程。想想，確實，一個月前這個流程都還沒可能。
+AI大人和諸多開發者們，謝過！
+最後讓AI挑出其最喜歡的一份： 不斷調教AI時，也一直看一個學生拿自己微寫作在論壇和AI搏鬥。好消息是，他贏了；壞消息是，他贏了。
+這句這麼寫，是給大家畫線做賞析玩的，嗯。
+粘貼作文題目和你作文正文，在「作文」版區發帖即可。
+如果是近期大家一起在做的題目，譬如統練微寫作，不粘貼題目直接給正文亦可，後台指令中默認包含題目了。
+基於AI Auto Responder，會完成自動批閱⋯⋯
+AI會自動區分大作文或微寫作 結構化評語 量化打分 給出修改建議，你可以回覆AI多輪修改 全選相關帖子，加TAG：作文 微寫作 名著VS縮寫，齊活。
+亂曰 作為語言文字文學文化學科，日常題目的全部閱卷，高考閱卷，調教好的AI，此刻，沒錯，此刻，目前，現下，公元2025年03月11日，或者10日，因為這篇寫到這剛過10日零點後三分鐘；已經遠遠超出全部人類教師的閱卷水準。
+且，稍作構想，技術上，完全可以在任意場景下實現。但，所謂真世界，實非真世界，是為真世界。
+佛呢，本曰的是哲思，我呢，其實只想以之鄙薄人類，包括，我，這個自己。
+8號是論壇一年，算生日吧；
+學生發帖在給論壇和論壇元老AI過生日，偉大政府也送了禮物，派GFW牆掉了論壇域名，嗯，非常好；感謝認證。
+北京市前兩天發了《北京市推进中小学人工智能教育工作方案（2025—2027年）》的通知，嗯，這個，更好。
+人類畫地為牢，以此村落彼村落，此文明彼文明，此國界彼國界⋯⋯都，特別好。
+域名問題發了投票，相關聯的幾個導航頁面也重新git push完，看投票結果，再說。等待與希望是人類的全部智慧，也許，真的是。
+但，基督山是復仇故事，GFW如何被復仇？人心的牆呢？
+前些日子放棄Blogger，年付買了X Premium&#43;，一則厭惡廣告，也為想將文章類遷移到X上，結果X那個文章的寫作頁面，嗯，特別爛。虧吧？不。禍福相倚，這個年費最後成了Grok3，基於X Premium&#43;瘋狂漲價的程度，這個無疑已經成了本年度最值付費。
+退一步，寫到Apple Note，發X吧。
+真亂曰 想想呢，這世界，在有意思的時候，是有點意思的。">
+
+
+
+
+  <meta itemprop="name" content="AI閱作文記">
+  <meta itemprop="description" content="緣起 上週五下午統練，藉之測試AI批微寫作。
+將全部紙質卷微寫作疊放拍照，同步iCloud。然後，開始想，這⋯⋯咋指令⋯⋯
+當初大作文指令，用了90年代研究報告和現行說不清道不明的標準，同時借鑑了台灣指考標準，效果足夠。微寫作一直沒做，實在是想不清該怎麼指令；且紙質轉電子版，上傳，召喚AI，多輪測試，都很折騰，於是一直擱置，至今。
+上週Mistral放出了OCR新模型，漢字識別準確率從91%提到97%左右，用Colab跑通了圖片，還順便測了本數學，效果確實不錯，切入口就有了，於是，動心。
+更重要的原因，是論壇AI運行已熟稔，這一年下來Gemini保持最新開發版，2.0 Flash Thinking Experimental 01-21 體感極佳。且，Discourse內Automation前兩天更新，終於跑通了AI自動回覆。於是，俱備。
+指令 就差指令。
+掃外圍，先。啟動Mistral識別全部學生微寫作文字前，想起前段時間拿Gemini 2.0 Flash Thinking Experimental 01-21識別手寫效果不錯，先給其機會；結果，比想像中好很多很多——字跡特別清晰的有三兩份一字不需改，一般不怎麼塗改的大致改動三兩處即可，特別亂的三五份⋯⋯不是AI的問題了就。於是果斷放棄Colab，畢竟Aistudio的介面更友好。
+這個識別的默認溫度0.7，其實有點高。學生手寫的「困于」，AI識別時肯定覺得根據上下文還是「囿于」好，就直接給我輸出「囿于」了。這類處理⋯⋯至少七八次⋯⋯好玩的是，學生論壇回覆說：「其实我想写囿于来着，想不起字怎么写了。」
+手寫這種除了學校沒人用的落後東西，我咒詛你在日常更快速死；去做藝術就好，那裡有龜甲直至毛筆，都是你舊雨知識。
+逐一截圖、粘貼、扔Aistudio識別，逐一校對，以紙質卷學號為標題，在論壇作文區發帖，該區域AI會自動回覆分數和批語和建議，逐一審閱AI批閱和分數。
+除兩份試卷逼我做了指令調整，三四份讓我不得不追問AI；其他全部，幾乎和我感覺自己要打的分數，完全一致。
+週末一天半，完成閱卷是其次，最大收穫可能還是這份相對特別的指令，或者，是這個跑通了的流程。想想，確實，一個月前這個流程都還沒可能。
+AI大人和諸多開發者們，謝過！
+最後讓AI挑出其最喜歡的一份： 不斷調教AI時，也一直看一個學生拿自己微寫作在論壇和AI搏鬥。好消息是，他贏了；壞消息是，他贏了。
+這句這麼寫，是給大家畫線做賞析玩的，嗯。
+粘貼作文題目和你作文正文，在「作文」版區發帖即可。
+如果是近期大家一起在做的題目，譬如統練微寫作，不粘貼題目直接給正文亦可，後台指令中默認包含題目了。
+基於AI Auto Responder，會完成自動批閱⋯⋯
+AI會自動區分大作文或微寫作 結構化評語 量化打分 給出修改建議，你可以回覆AI多輪修改 全選相關帖子，加TAG：作文 微寫作 名著VS縮寫，齊活。
+亂曰 作為語言文字文學文化學科，日常題目的全部閱卷，高考閱卷，調教好的AI，此刻，沒錯，此刻，目前，現下，公元2025年03月11日，或者10日，因為這篇寫到這剛過10日零點後三分鐘；已經遠遠超出全部人類教師的閱卷水準。
+且，稍作構想，技術上，完全可以在任意場景下實現。但，所謂真世界，實非真世界，是為真世界。
+佛呢，本曰的是哲思，我呢，其實只想以之鄙薄人類，包括，我，這個自己。
+8號是論壇一年，算生日吧；
+學生發帖在給論壇和論壇元老AI過生日，偉大政府也送了禮物，派GFW牆掉了論壇域名，嗯，非常好；感謝認證。
+北京市前兩天發了《北京市推进中小学人工智能教育工作方案（2025—2027年）》的通知，嗯，這個，更好。
+人類畫地為牢，以此村落彼村落，此文明彼文明，此國界彼國界⋯⋯都，特別好。
+域名問題發了投票，相關聯的幾個導航頁面也重新git push完，看投票結果，再說。等待與希望是人類的全部智慧，也許，真的是。
+但，基督山是復仇故事，GFW如何被復仇？人心的牆呢？
+前些日子放棄Blogger，年付買了X Premium&#43;，一則厭惡廣告，也為想將文章類遷移到X上，結果X那個文章的寫作頁面，嗯，特別爛。虧吧？不。禍福相倚，這個年費最後成了Grok3，基於X Premium&#43;瘋狂漲價的程度，這個無疑已經成了本年度最值付費。
+退一步，寫到Apple Note，發X吧。
+真亂曰 想想呢，這世界，在有意思的時候，是有點意思的。">
+  <meta itemprop="datePublished" content="2025-03-10T17:30:00+08:00">
+  <meta itemprop="dateModified" content="2025-03-10T17:30:00+08:00">
+  <meta itemprop="wordCount" content="58">
+  <meta itemprop="keywords" content="AI,作文,微寫作">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+   
+  :root {
+    --width-max: 720px;
+    --font-primary: Verdana, sans-serif;
+    --font-secondary: monospace;
+    --font-size-primary: 1em;
+    --font-size-secondary: 0.8em;
+    --body-bg-color: #fcfcfc;
+    --bold-text-color: #222;
+    --body-text-color: #444;
+    --link-color: #3273dc;
+    --link-visited-color: #8b6fcb;
+    --table-border-color: #f2f2f2;
+    --table-th-bg-color: #f2f2f2;
+    --img-border-color: #f2f2f2;
+    --code-bg-color: #f2f2f2;
+    --code-text-color: #222;
+    --blockquote-border-color: #666;
+    --blockquote-text-color: #666;
+    --upvoted-color: #FA8072;
+  }
+
+  @media (prefers-color-scheme: dark) {
+     
+    :root {
+      --body-bg-color: #1c1c1c;
+      --bold-text-color: #eee;
+      --body-text-color: #ddd;
+      --link-color: #8cc2dd;
+      --link-visited-color: #c3b1ee;
+      --table-border-color: #999;
+      --table-th-bg-color: #999;
+      --img-border-color: #999;
+      --code-bg-color: #555;
+      --code-text-color: #ddd;
+      --blockquote-border-color: #ccc;
+      --blockquote-text-color: #ccc;
+    }
+  }
+
+  body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-primary);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width-max);
+    text-align: left;
+    background-color: var(--body-bg-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--body-text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: var(--bold-text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 16px 0;
+  }
+
+  a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title:hover {
+    text-decoration: none;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 8px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--table-border-color);
+    border-radius: 4px;
+  }
+
+  th,
+  td {
+    border: 1px solid var(--table-border-color);
+    padding: 4px;
+  }
+
+  th {
+    background-color: var(--table-th-bg-color);
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dashed;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--img-border-color);
+    border-radius: 4px;
+    content-visibility: auto;
+    loading: lazy;
+  }
+
+  img[src*="#minipic"] {
+    max-width: 50%;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  i {
+    font-style: normal;
+  }
+
+  time {
+    font-family: var(--font-secondary);
+    font-size: 15px;
+  }
+
+  code {
+    font-family: var(--font-secondary);
+    background-color: var(--code-bg-color);
+    color: var(--code-text-color);
+    padding: 2px;
+    border-radius: 4px;
+  }
+
+  pre code {
+    display: block;
+    padding: 16px;
+    white-space: pre-wrap;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    border-radius: 4px;
+  }
+
+  div.highlight code {
+    background-color: var(--code-bg-color);
+    color: var(--code-text-color);
+  }
+
+  blockquote {
+    border-left: 2px solid var(--blockquote-border-color);
+    color: var(--blockquote-text-color);
+    margin: 0;
+    padding-left: 16px;
+    font-style: normal;
+  }
+
+  blockquote p {
+    margin: 0;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+    font-size: var(--font-size-secondary);
+  }
+
+  ul li:has(input) {
+    list-style-type: none;
+    margin-left: -25.5px;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li span.grouped {
+    flex: 0 0 80px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--link-visited-color);
+  }
+
+   
+  div.toc {
+    position: fixed;
+    top: 50%;
+    left: calc((100vw + var(--width-max)) / 2);
+    transform: translateY(-50%);
+    width: calc((90vw - var(--width-max)) / 2);
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 20px 8px;
+    z-index: 99;
+
+     
+    &::-webkit-scrollbar {
+        display: none;  
+    }
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+
+  div.toc ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  div.toc ul li {
+    margin: 8px 0;
+  }
+
+  div.toc ul li a {
+    text-decoration: none;
+    color: var(--blockquote-text-color);
+  }
+
+  div.toc ul li a:hover {
+    color: var(--link-color);
+  }
+
+   
+  button.upvote-btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--body-text-color);
+  }
+
+  button.upvoted {
+    color: var(--upvoted-color);
+  }
+
+  span.upvote-count {
+    margin-top: -4px;
+    font-size: smaller;
+  }
+
+  @media (max-width: 500px) {
+    img[src*="#minipic"] {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    div.toc {
+      display: none;
+    }
+  }
+</style>
+
+</head>
+
+<body>
+  <header><link rel="stylesheet" href="/css/custom.css"></header>
+  <main>
+
+
+<h1>AI閱作文記</h1>
+
+<p>
+  <i>
+    <time datetime='2025-03-10' pubdate>
+      10 Mar, 2025
+    </time>
+  </i>
+</p>
+
+
+ 
+
+<content> <h2 id="緣起">緣起</h2>
+<p>上週五下午統練，藉之測試AI批微寫作。<br>
+將全部紙質卷微寫作疊放拍照，同步iCloud。然後，開始想，這⋯⋯咋指令⋯⋯</p>
+<p>當初大作文指令，用了90年代研究報告和現行說不清道不明的標準，同時借鑑了台灣指考標準，效果足夠。微寫作一直沒做，實在是想不清該怎麼指令；且紙質轉電子版，上傳，召喚AI，多輪測試，都很折騰，於是一直擱置，至今。</p>
+<p>上週Mistral放出了OCR新模型，漢字識別準確率從91%提到97%左右，用Colab跑通了圖片，還順便測了本數學，效果確實不錯，切入口就有了，於是，動心。</p>
+<p>更重要的原因，是論壇AI運行已熟稔，這一年下來Gemini保持最新開發版，<strong>2.0 Flash Thinking Experimental 01-21</strong> 體感極佳。且，Discourse內<strong>Automation</strong>前兩天更新，終於跑通了AI自動回覆。於是，俱備。</p>
+<h2 id="指令">指令</h2>
+<p>就差指令。</p>
+<p>掃外圍，先。啟動Mistral識別全部學生微寫作文字前，想起前段時間拿<strong>Gemini 2.0 Flash Thinking Experimental 01-21</strong>識別手寫效果不錯，先給其機會；結果，比想像中好很多很多——字跡特別清晰的有三兩份一字不需改，一般不怎麼塗改的大致改動三兩處即可，特別亂的三五份⋯⋯不是AI的問題了就。於是果斷放棄Colab，畢竟Aistudio的介面更友好。</p>
+<p>這個識別的默認<strong>溫度0.7</strong>，其實有點高。學生手寫的「困于」，AI識別時肯定覺得根據上下文還是「囿于」好，就直接給我輸出「囿于」了。這類處理⋯⋯至少七八次⋯⋯好玩的是，學生論壇回覆說：<strong>「其实我想写囿于来着，想不起字怎么写了。」</strong></p>
+<p>手寫這種除了學校沒人用的落後東西，我咒詛你在日常更快速死；去做藝術就好，那裡有龜甲直至毛筆，都是你舊雨知識。</p>
+<p>逐一截圖、粘貼、扔Aistudio識別，逐一校對，以紙質卷<strong>學號</strong>為標題，在論壇作文區發帖，該區域AI會自動回覆分數和批語和建議，逐一審閱AI批閱和分數。</p>
+<p>除兩份試卷逼我做了指令調整，三四份讓我不得不追問AI；其他全部，幾乎和我感覺自己要打的分數，完全一致。</p>
+<p>週末一天半，完成閱卷是其次，最大收穫可能還是這份相對特別的指令，或者，是這個跑通了的流程。想想，確實，一個月前這個流程都還沒可能。</p>
+<p><strong>AI大人和諸多開發者們，謝過！</strong></p>
+<p>最後讓AI挑出其最喜歡的一份：
+<img src="https://raw.githubusercontent.com/gptv/suen/main/images/aipick.jpg" alt="Aipickone" loading="lazy"></p>
+<p>不斷調教AI時，也一直看一個學生拿自己微寫作在論壇和AI搏鬥。<strong>好消息是，他贏了；壞消息是，他贏了。</strong></p>
+<p>這句這麼寫，是給大家畫線做賞析玩的，嗯。</p>
+<hr>
+<p>粘貼作文題目和你作文正文，在「作文」版區發帖即可。<br>
+如果是近期大家一起在做的題目，譬如統練微寫作，不粘貼題目直接給正文亦可，後台指令中默認包含題目了。</p>
+<p>基於AI Auto Responder，會完成自動批閱⋯⋯</p>
+<ul>
+<li>AI會自動區分<strong>大作文或微寫作</strong></li>
+<li><strong>結構化評語</strong></li>
+<li><strong>量化打分</strong></li>
+<li><strong>給出修改建議</strong>，你可以回覆AI多輪修改</li>
+</ul>
+<p>全選相關帖子，加<strong>TAG</strong>：<code>作文</code> <code>微寫作</code> <code>名著VS縮寫</code>，<strong>齊活。</strong></p>
+<hr>
+<h2 id="亂曰">亂曰</h2>
+<p>作為語言文字文學文化學科，日常題目的全部閱卷，高考閱卷，調教好的AI，此刻，沒錯，此刻，目前，現下，<strong>公元2025年03月11日</strong>，或者<strong>10日</strong>，因為這篇寫到這剛過10日零點後三分鐘；<strong>已經遠遠超出全部人類教師的閱卷水準。</strong></p>
+<p>且，稍作構想，技術上，完全可以在任意場景下實現。但，<strong>所謂真世界，實非真世界，是為真世界。</strong><br>
+佛呢，本曰的是哲思，<strong>我呢，其實只想以之鄙薄人類，包括，我，這個自己。</strong></p>
+<hr>
+<p><strong>8號是論壇一年，算生日吧；</strong><br>
+學生發帖在給論壇和論壇元老AI過生日，偉大政府也送了禮物，派GFW牆掉了論壇域名，嗯，非常好；感謝認證。</p>
+<p>北京市前兩天發了《北京市推进中小学人工智能教育工作方案（2025—2027年）》的通知，嗯，這個，更好。</p>
+<p><strong>人類畫地為牢，以此村落彼村落，此文明彼文明，此國界彼國界⋯⋯都，特別好。</strong></p>
+<p>域名問題發了投票，相關聯的幾個導航頁面也重新<code>git push</code>完，看投票結果，再說。<strong>等待與希望是人類的全部智慧，也許，真的是。</strong></p>
+<p><strong>但，基督山是復仇故事，GFW如何被復仇？人心的牆呢？</strong></p>
+<p>前些日子放棄Blogger，年付買了X Premium+，<strong>一則厭惡廣告，也為想將文章類遷移到X上</strong>，結果X那個文章的寫作頁面，嗯，特別爛。<strong>虧吧？不。禍福相倚，這個年費最後成了Grok3，基於X Premium+瘋狂漲價的程度，這個無疑已經成了本年度最值付費。</strong></p>
+<p>退一步，寫到Apple Note，發X吧。</p>
+<hr>
+<h2 id="真亂曰">真亂曰</h2>
+<p><strong>想想呢，這世界，在有意思的時候，是有點意思的。</strong></p>
+ </content>
+
+<p>
+  
+  <a href="http://localhost:1313/tags/ai/">#AI</a>
+  
+  <a href="http://localhost:1313/tags/%E4%BD%9C%E6%96%87/">#作文</a>
+  
+  <a href="http://localhost:1313/tags/%E5%BE%AE%E5%AF%AB%E4%BD%9C/">#微寫作</a>
+  
+</p>
+
+
+
+<div class="upvote-container">
+<small class="upvote">
+  <button class="upvote-btn" id="upvote-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+    <polyline points="17 11 12 6 7 11"></polyline>
+    <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+    <span class="upvote-count" id="upvote-count">0</span>
+  </button>
+</small>
+</div>
+
+<script>
+  let hasUpvoted = false;
+  let upvoteBtn;
+  let upvoteCount;
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const slug = 'ai';
+    upvoteBtn = document.getElementById('upvote-btn');
+    upvoteCount = document.getElementById('upvote-count');
+    getCount(slug);
+
+    
+    upvoteBtn.addEventListener('click', handleUpvote);
+  });
+
+  
+  async function handleUpvote() {
+    if (hasUpvoted) {
+      console.log('You have already upvoted this post!');
+      return;
+    }
+    const slug = 'ai';
+
+    
+    upvoteBtn.disabled = true;
+    
+    upvoteBtn.classList.add('upvoted');
+    
+    upvoteCount.innerText = parseInt(upvoteCount.innerText) + 1;
+
+    try {
+      const response = await fetch('https:\/\/upvote.bdfz.net\/upvote', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ postId: slug, diff: 1 }),
+      });
+
+      if (response.ok) {
+        console.log('Upvote successful!');
+        hasUpvoted = true;
+        await getCount(slug, 3);
+      } else {
+        console.log('Upvote failed!');
+      }
+    } catch (error) {
+      console.error('Error: ', error);
+    } finally {
+      upvoteBtn.disabled = false;
+    }
+  }
+
+  
+  async function getCount(slug, retryCount = 0) {
+    try {
+      const response = await fetch('https:\/\/upvote.bdfz.net\/count?post=' + slug, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      const data = await response.json();
+
+      if (data.code === 0) {
+        const count = data.data.count;
+        upvoteCount.innerText = count;
+        hasUpvoted = data.data.hasUpvoted;
+        if (hasUpvoted) {
+          upvoteBtn.classList.add('upvoted');
+        } else {
+          upvoteBtn.classList.remove('upvoted');
+        }
+      } else {
+        console.error('Failed to get upvote count: ', data.msg);
+      }
+    } catch (error) {
+      console.error('Error: ', error);
+      if (retryCount > 0) {
+        setTimeout(() => {
+          getCount(slug, retryCount - 1);
+        }, 1000);
+      }
+    }
+  }
+</script>
+
+
+
+
+ 
+<div class="toc">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#緣起">緣起</a></li>
+    <li><a href="#指令">指令</a></li>
+    <li><a href="#亂曰">亂曰</a></li>
+    <li><a href="#真亂曰">真亂曰</a></li>
+  </ul>
+</nav>
+</div>
+
+
+
+  </main>
+  <footer>
+<footer>
+    <p>© 2025 Suen · <a href="https://i.bdfzer.com/">Bdfzer</a></p>
+  </footer></footer>
+
+    
+
+
+</body>
+
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/gptv/suen/main/images/Avatar-small.jpeg" />
+<title>AI論語 | BDFZ-Suen</title>
+<meta name="title" content="AI論語" />
+<meta name="description" content="高考要考《論語》，這本身⋯⋯就挺變態的。那麼，何妨應之以變態。
+週末，想起學生課間刷網頁遊戲，那，何妨再加一個孔子當玩具。
+《論語譯註》的數據很久之前就分章發布在論壇，現在格式化就好。
+然後最小代碼，建GitHub內lunyu庫，推CF，早九晚六，成功上線。
+玩法： 每次刷新頁面，會隨機出論語正文一則。
+下方有：
+
+孔子：我該如何解釋這句？
+Gemini AI：請給我現代解讀
+自由提問
+
+孔子的解釋，會直接顯示楊伯峻譯註的譯文和注釋。
+Gemini AI會跟你長長長長說下ta的看法。
+覺得孔子或Gemini AI在瞎扯？那你可以點自由提問，跟這兩個一起扯，對話成三人，嗯。
+目錄未完成，沒想好該如何設計，先擱置。
+本來設置了多個API每小時輪轉，後來撤了，沒那麼多人讀這玩意的，應該。
+代碼全部開源 GitHub ，論語數據也是；有能力繼續深加工的，拿走就好。
+學術為公器，技術也是。
+網址 https://kz.bdfz.net/
+字體：匯文明朝體。" />
+<meta name="keywords" content="AI,論語,高考," />
+
+<link rel="canonical" href="http://localhost:1313/posts/lunyu/">
+
+
+<meta property="og:url" content="http://localhost:1313/posts/lunyu/">
+  <meta property="og:site_name" content="BDFZ-Suen">
+  <meta property="og:title" content="AI論語">
+  <meta property="og:description" content="高考要考《論語》，這本身⋯⋯就挺變態的。那麼，何妨應之以變態。 週末，想起學生課間刷網頁遊戲，那，何妨再加一個孔子當玩具。 《論語譯註》的數據很久之前就分章發布在論壇，現在格式化就好。 然後最小代碼，建GitHub內lunyu庫，推CF，早九晚六，成功上線。
+玩法： 每次刷新頁面，會隨機出論語正文一則。
+下方有：
+孔子：我該如何解釋這句？ Gemini AI：請給我現代解讀 自由提問 孔子的解釋，會直接顯示楊伯峻譯註的譯文和注釋。
+Gemini AI會跟你長長長長說下ta的看法。
+覺得孔子或Gemini AI在瞎扯？那你可以點自由提問，跟這兩個一起扯，對話成三人，嗯。
+目錄未完成，沒想好該如何設計，先擱置。
+本來設置了多個API每小時輪轉，後來撤了，沒那麼多人讀這玩意的，應該。
+代碼全部開源 GitHub ，論語數據也是；有能力繼續深加工的，拿走就好。
+學術為公器，技術也是。
+網址 https://kz.bdfz.net/
+字體：匯文明朝體。">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-23T23:10:00+08:00">
+    <meta property="article:modified_time" content="2025-03-23T23:10:00+08:00">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="論語">
+    <meta property="article:tag" content="高考">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI論語">
+  <meta name="twitter:description" content="高考要考《論語》，這本身⋯⋯就挺變態的。那麼，何妨應之以變態。 週末，想起學生課間刷網頁遊戲，那，何妨再加一個孔子當玩具。 《論語譯註》的數據很久之前就分章發布在論壇，現在格式化就好。 然後最小代碼，建GitHub內lunyu庫，推CF，早九晚六，成功上線。
+玩法： 每次刷新頁面，會隨機出論語正文一則。
+下方有：
+孔子：我該如何解釋這句？ Gemini AI：請給我現代解讀 自由提問 孔子的解釋，會直接顯示楊伯峻譯註的譯文和注釋。
+Gemini AI會跟你長長長長說下ta的看法。
+覺得孔子或Gemini AI在瞎扯？那你可以點自由提問，跟這兩個一起扯，對話成三人，嗯。
+目錄未完成，沒想好該如何設計，先擱置。
+本來設置了多個API每小時輪轉，後來撤了，沒那麼多人讀這玩意的，應該。
+代碼全部開源 GitHub ，論語數據也是；有能力繼續深加工的，拿走就好。
+學術為公器，技術也是。
+網址 https://kz.bdfz.net/
+字體：匯文明朝體。">
+
+
+
+
+  <meta itemprop="name" content="AI論語">
+  <meta itemprop="description" content="高考要考《論語》，這本身⋯⋯就挺變態的。那麼，何妨應之以變態。 週末，想起學生課間刷網頁遊戲，那，何妨再加一個孔子當玩具。 《論語譯註》的數據很久之前就分章發布在論壇，現在格式化就好。 然後最小代碼，建GitHub內lunyu庫，推CF，早九晚六，成功上線。
+玩法： 每次刷新頁面，會隨機出論語正文一則。
+下方有：
+孔子：我該如何解釋這句？ Gemini AI：請給我現代解讀 自由提問 孔子的解釋，會直接顯示楊伯峻譯註的譯文和注釋。
+Gemini AI會跟你長長長長說下ta的看法。
+覺得孔子或Gemini AI在瞎扯？那你可以點自由提問，跟這兩個一起扯，對話成三人，嗯。
+目錄未完成，沒想好該如何設計，先擱置。
+本來設置了多個API每小時輪轉，後來撤了，沒那麼多人讀這玩意的，應該。
+代碼全部開源 GitHub ，論語數據也是；有能力繼續深加工的，拿走就好。
+學術為公器，技術也是。
+網址 https://kz.bdfz.net/
+字體：匯文明朝體。">
+  <meta itemprop="datePublished" content="2025-03-23T23:10:00+08:00">
+  <meta itemprop="dateModified" content="2025-03-23T23:10:00+08:00">
+  <meta itemprop="wordCount" content="25">
+  <meta itemprop="keywords" content="AI,論語,高考">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+   
+  :root {
+    --width-max: 720px;
+    --font-primary: Verdana, sans-serif;
+    --font-secondary: monospace;
+    --font-size-primary: 1em;
+    --font-size-secondary: 0.8em;
+    --body-bg-color: #fcfcfc;
+    --bold-text-color: #222;
+    --body-text-color: #444;
+    --link-color: #3273dc;
+    --link-visited-color: #8b6fcb;
+    --table-border-color: #f2f2f2;
+    --table-th-bg-color: #f2f2f2;
+    --img-border-color: #f2f2f2;
+    --code-bg-color: #f2f2f2;
+    --code-text-color: #222;
+    --blockquote-border-color: #666;
+    --blockquote-text-color: #666;
+    --upvoted-color: #FA8072;
+  }
+
+  @media (prefers-color-scheme: dark) {
+     
+    :root {
+      --body-bg-color: #1c1c1c;
+      --bold-text-color: #eee;
+      --body-text-color: #ddd;
+      --link-color: #8cc2dd;
+      --link-visited-color: #c3b1ee;
+      --table-border-color: #999;
+      --table-th-bg-color: #999;
+      --img-border-color: #999;
+      --code-bg-color: #555;
+      --code-text-color: #ddd;
+      --blockquote-border-color: #ccc;
+      --blockquote-text-color: #ccc;
+    }
+  }
+
+  body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-primary);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width-max);
+    text-align: left;
+    background-color: var(--body-bg-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--body-text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: var(--bold-text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 16px 0;
+  }
+
+  a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title:hover {
+    text-decoration: none;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 8px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--table-border-color);
+    border-radius: 4px;
+  }
+
+  th,
+  td {
+    border: 1px solid var(--table-border-color);
+    padding: 4px;
+  }
+
+  th {
+    background-color: var(--table-th-bg-color);
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dashed;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--img-border-color);
+    border-radius: 4px;
+    content-visibility: auto;
+    loading: lazy;
+  }
+
+  img[src*="#minipic"] {
+    max-width: 50%;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  i {
+    font-style: normal;
+  }
+
+  time {
+    font-family: var(--font-secondary);
+    font-size: 15px;
+  }
+
+  code {
+    font-family: var(--font-secondary);
+    background-color: var(--code-bg-color);
+    color: var(--code-text-color);
+    padding: 2px;
+    border-radius: 4px;
+  }
+
+  pre code {
+    display: block;
+    padding: 16px;
+    white-space: pre-wrap;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    border-radius: 4px;
+  }
+
+  div.highlight code {
+    background-color: var(--code-bg-color);
+    color: var(--code-text-color);
+  }
+
+  blockquote {
+    border-left: 2px solid var(--blockquote-border-color);
+    color: var(--blockquote-text-color);
+    margin: 0;
+    padding-left: 16px;
+    font-style: normal;
+  }
+
+  blockquote p {
+    margin: 0;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+    font-size: var(--font-size-secondary);
+  }
+
+  ul li:has(input) {
+    list-style-type: none;
+    margin-left: -25.5px;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li span.grouped {
+    flex: 0 0 80px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--link-visited-color);
+  }
+
+   
+  div.toc {
+    position: fixed;
+    top: 50%;
+    left: calc((100vw + var(--width-max)) / 2);
+    transform: translateY(-50%);
+    width: calc((90vw - var(--width-max)) / 2);
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 20px 8px;
+    z-index: 99;
+
+     
+    &::-webkit-scrollbar {
+        display: none;  
+    }
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+
+  div.toc ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  div.toc ul li {
+    margin: 8px 0;
+  }
+
+  div.toc ul li a {
+    text-decoration: none;
+    color: var(--blockquote-text-color);
+  }
+
+  div.toc ul li a:hover {
+    color: var(--link-color);
+  }
+
+   
+  button.upvote-btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--body-text-color);
+  }
+
+  button.upvoted {
+    color: var(--upvoted-color);
+  }
+
+  span.upvote-count {
+    margin-top: -4px;
+    font-size: smaller;
+  }
+
+  @media (max-width: 500px) {
+    img[src*="#minipic"] {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    div.toc {
+      display: none;
+    }
+  }
+</style>
+
+</head>
+
+<body>
+  <header><link rel="stylesheet" href="/css/custom.css"></header>
+  <main>
+
+
+<h1>AI論語</h1>
+
+<p>
+  <i>
+    <time datetime='2025-03-23' pubdate>
+      23 Mar, 2025
+    </time>
+  </i>
+</p>
+
+
+ 
+
+<content> <p>高考要考《論語》，這本身⋯⋯就挺變態的。那麼，何妨應之以變態。
+週末，想起學生課間刷網頁遊戲，那，何妨再加一個孔子當玩具。
+《論語譯註》的數據很久之前就分章發布在論壇，現在格式化就好。
+然後最小代碼，建GitHub內lunyu庫，推CF，早九晚六，成功上線。</p>
+<p>玩法： 每次刷新頁面，會隨機出論語正文一則。</p>
+<p>下方有：</p>
+<ul>
+<li>孔子：我該如何解釋這句？</li>
+<li>Gemini AI：請給我現代解讀</li>
+<li>自由提問</li>
+</ul>
+<p>孔子的解釋，會直接顯示楊伯峻譯註的譯文和注釋。<br>
+Gemini AI會跟你長長長長說下ta的看法。<br>
+覺得孔子或Gemini AI在瞎扯？那你可以點自由提問，跟這兩個一起扯，對話成三人，嗯。</p>
+<p>目錄未完成，沒想好該如何設計，先擱置。</p>
+<p>本來設置了多個API每小時輪轉，後來撤了，沒那麼多人讀這玩意的，應該。</p>
+<p>代碼全部開源 <a href="https://github.com/gptv/lunyu">GitHub</a> ，論語數據也是；有能力繼續深加工的，拿走就好。<br>
+學術為公器，技術也是。</p>
+<p>網址 <a href="https://kz.bdfz.net/">https://kz.bdfz.net/</a><br>
+字體：匯文明朝體。</p>
+ </content>
+
+<p>
+  
+  <a href="http://localhost:1313/tags/ai/">#AI</a>
+  
+  <a href="http://localhost:1313/tags/%E8%AB%96%E8%AA%9E/">#論語</a>
+  
+  <a href="http://localhost:1313/tags/%E9%AB%98%E8%80%83/">#高考</a>
+  
+</p>
+
+
+
+<div class="upvote-container">
+<small class="upvote">
+  <button class="upvote-btn" id="upvote-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+    <polyline points="17 11 12 6 7 11"></polyline>
+    <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+    <span class="upvote-count" id="upvote-count">0</span>
+  </button>
+</small>
+</div>
+
+<script>
+  let hasUpvoted = false;
+  let upvoteBtn;
+  let upvoteCount;
+
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    const slug = 'lunyu';
+    upvoteBtn = document.getElementById('upvote-btn');
+    upvoteCount = document.getElementById('upvote-count');
+    getCount(slug);
+
+    
+    upvoteBtn.addEventListener('click', handleUpvote);
+  });
+
+  
+  async function handleUpvote() {
+    if (hasUpvoted) {
+      console.log('You have already upvoted this post!');
+      return;
+    }
+    const slug = 'lunyu';
+
+    
+    upvoteBtn.disabled = true;
+    
+    upvoteBtn.classList.add('upvoted');
+    
+    upvoteCount.innerText = parseInt(upvoteCount.innerText) + 1;
+
+    try {
+      const response = await fetch('https:\/\/upvote.bdfz.net\/upvote', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ postId: slug, diff: 1 }),
+      });
+
+      if (response.ok) {
+        console.log('Upvote successful!');
+        hasUpvoted = true;
+        await getCount(slug, 3);
+      } else {
+        console.log('Upvote failed!');
+      }
+    } catch (error) {
+      console.error('Error: ', error);
+    } finally {
+      upvoteBtn.disabled = false;
+    }
+  }
+
+  
+  async function getCount(slug, retryCount = 0) {
+    try {
+      const response = await fetch('https:\/\/upvote.bdfz.net\/count?post=' + slug, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      const data = await response.json();
+
+      if (data.code === 0) {
+        const count = data.data.count;
+        upvoteCount.innerText = count;
+        hasUpvoted = data.data.hasUpvoted;
+        if (hasUpvoted) {
+          upvoteBtn.classList.add('upvoted');
+        } else {
+          upvoteBtn.classList.remove('upvoted');
+        }
+      } else {
+        console.error('Failed to get upvote count: ', data.msg);
+      }
+    } catch (error) {
+      console.error('Error: ', error);
+      if (retryCount > 0) {
+        setTimeout(() => {
+          getCount(slug, retryCount - 1);
+        }, 1000);
+      }
+    }
+  }
+</script>
+
+
+
+
+ 
+<div class="toc">
+<nav id="TableOfContents"></nav>
+</div>
+
+
+
+  </main>
+  <footer>
+<footer>
+    <p>© 2025 Suen · <a href="https://i.bdfzer.com/">Bdfzer</a></p>
+  </footer></footer>
+
+    
+
+
+</body>
+
+</html>
