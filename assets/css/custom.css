@@ -1,0 +1,26 @@
+/* /assets/css/custom.css */
+
+@font-face {
+  font-family: 'HuWenMingChaoTi';
+  src: url('../fonts/HuWenMingChaoTi.woff2') format('woff2'),
+       url('../fonts/HuWenMingChaoTi.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  /* 之前添加的：覆蓋字體 */
+  --font-primary: 'HuWenMingChaoTi', Verdana, sans-serif;
+
+  /* 新增：覆蓋主要字體大小 (原默認為 1em) */
+  /* 可以試試 1.1em, 1.15em, 1.2em 或 17px, 18px 等 */
+  --font-size-primary: 1.15em; /* 將這行的值調整到你滿意的大小 */
+}
+
+/* 可選：如果覺得標題 (h1, h2 等) 也需要調整 */
+/* h1, h2, h3, h4, h5, h6 {
+/*      font-size: 1.Xrem; /* 根據需要調整，注意標題通常用 rem 或 em */
+/*    } */
+/* h1 { font-size: 2.2rem; } /* 舉例 */
+/* h2 { font-size: 1.8rem; } /* 舉例 */

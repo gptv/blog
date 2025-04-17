@@ -1,3 +1,18 @@
-<!-- A partial to be overwritten by the user.
-  Simply place a custom_head.html into
-  your local /layouts/partials-directory -->
+{{/* /layouts/partials/custom_head.html */}}
+
+{{ $customCSS := resources.Get "css/custom.css" }} {{/* Get the asset */}}
+{{ if $customCSS }}
+  {{/* Define options for processing */}}
+  {{ $options := (dict
+        "targetPath" "css/custom.min.css"
+        "minify" true
+       ) }}
+
+  {{/* Process the CSS using the NEW css.Sass function */}}
+  {{ $processedCustomCSS := $customCSS | css.Sass $options | resources.Fingerprint }}
+
+  {{/* Generate the link tag */}}
+  <link rel="stylesheet" href="{{ $processedCustomCSS.RelPermalink }}" integrity="{{ $processedCustomCSS.Data.Integrity }}">
+{{ else }}
+  {{ warnf "Custom CSS file not found at assets/css/custom.css" }}
+{{ end }}

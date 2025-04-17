@@ -1,0 +1,19 @@
+{{/* layouts/partials/cursor.html */}}
+<nav class="pagination">
+  {{ if .HasPrev }}
+    <a class="prev" href="{{ .Prev.URL }}">‹ Prev</a>
+  {{ end }}
+
+  {{/* 直接遍历所有 Pagers，生成数字链接 */}}
+  {{ range .Pagers }}
+    {{ if eq .PageNumber $.PageNumber }}
+      <span class="current">{{ .PageNumber }}</span>
+    {{ else }}
+      <a href="{{ .URL }}">{{ .PageNumber }}</a>
+    {{ end }}
+  {{ end }}
+
+  {{ if .HasNext }}
+    <a class="next" href="{{ .Next.URL }}">Next ›</a>
+  {{ end }}
+</nav>

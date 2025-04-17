@@ -1,31 +1,16 @@
-{{ if ne .Site.Params.Footer.hideRSSAndEmail true }}
-<!-- Enable RSS and email exists -->
-{{ if and ( ne .Site.Params.RSS.enableRSS false ) .Site.Params.Author.email }}
-Subscribe via <a href="/index.xml">RSS</a> or just <a href="mailto:{{ .Site.Params.Author.email }}">say hello</a>.
-<br />
-{{ end }}
-<!-- Enable RSS and email does not exists -->
-{{ if and ( ne .Site.Params.RSS.enableRSS false ) (not .Site.Params.Author.email) }}
-Subscribe via <a href="/index.xml">RSS</a>.
-<br />
-{{ end }}
-<!-- Do not enable RSS and email exists -->
-{{ if and ( ne .Site.Params.RSS.enableRSS true ) .Site.Params.Author.email }}
-Say hello via <a href="mailto:{{ .Site.Params.Author.email }}">email</a>.
-<br />
-{{ end }}
-{{ end }}
+<!-- 移除這些判斷式/文字就不會再顯示 RSS、Sitemap 等 -->
+<footer>
+    <p>© 2025 Suen · <a href="https://i.bdfzer.com/">Bdfzer</a></p>
+</footer>
 
-<!-- Made with line -->
-{{ if ne .Site.Params.Footer.hideMadeWithLine true }}Made with
-<a href="https://github.com/rokcso/hugo-bearblog-neo/">Hugo Bear Neo</a>.
-<br />
-{{ end }}
-
-<!-- Sitemap -->
-{{ if ne .Site.Params.Footer.hideCopyright true }}
-{{ .Site.Params.copyright }}
-{{ end }}
-{{ if ne .Site.Params.Footer.hideSitemap true }}
-🗺️ <a href="/sitemap.xml">Sitemap</a>.
-{{ end }}
+<script type="text/javascript">
+  window.addEventListener('load', function() {
+      setTimeout(function() {
+          (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "nu39a0yt0w");
+      }, 2000);
+  });
+</script>
