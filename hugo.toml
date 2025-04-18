@@ -42,7 +42,7 @@ enableRobotsTXT   = true
   category = "categories"
 
 [pagination]
-  pagerSize      = 20
+  pagerSize      = 12
   disableAliases = false
   path           = "page"
 

@@ -6,7 +6,7 @@ title: "Home"
 
 ![頭像圖片](https://raw.githubusercontent.com/gptv/suen/main/images/small.png)
 
-與很多所謂學生一起讀書，讀很多所謂古人今人所寫；  
+與很多所謂學生一起讀書，讀很多所謂古今人所寫；  
 然後，信或不信。
 </div>
 
@@ -14,7 +14,7 @@ title: "Home"
 
 #### ✨ 看，這學校
 
-| <a href="https://i.rdfzer.com" target="_blank">導航頁</a>  | <a href="https://forum.rdfzer.com" target="_blank">彣の彰</a> | <a href="https://mf.bdfz.net" target="_blank">高考默寫</a> | <a href="https://kw.bdfz.net" target="_blank">AI課文</a> |<a href="https://todo.bdfz.net" target="_blank">To-Do Online</a> | 
+| <a href="https://i.rdfzer.com" target="_blank">導航頁</a>  | <a href="https://forum.rdfzer.com" target="_blank">彣の彰</a> | <a href="https://mf.bdfz.net" target="_blank">高考默寫</a> | <a href="https://kw.bdfz.net" target="_blank">AI課文</a> |<a href="https://todo.bdfz.net" target="_blank">To-Do</a> | 
 
 | <a href="https://gk.bdfz.net" target="_blank">AI高考</a> | <a href="https://mx.bdfz.net" target="_blank">AI默寫</a> | <a href="https://kz.bdfz.net" target="_blank">AI論語</a> | <a href="https://hlm.bdfz.net" target="_blank">AI紅樓</a> |  <a href="https://i.bdfz.net" target="_blank">Bdfz-AI</a>  |   
 
